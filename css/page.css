@@ -20,25 +20,21 @@ header h2 {
 }
 
 .area {
-	display: inline-block;
-	height: 60%;
 	margin: 1em 0.1em;
 	width: 24%;
 	text-align: center;
-}
-.area a {
-	border-bottom: 1px solid #FFFFFF;
+	text-decoration: none;
 	color: #FFFFFF;
 	display: inline-block;
-	font-size: 1.5em;
-	margin-bottom: 1em;
-	padding: 8em 0 1em;
-	text-decoration: none;
-	width: 70%;
+	padding: 15em 0 9em;
 }
 .area span {
-	padding: 1em;
-	font-size: 90%;
+	font-size: 1.5em;
+	padding: 0.5em;
+	border-bottom: 1px solid;
+}
+.area p {
+	padding: 1em 1em 0;
 }
 .myself {
 	background-color: #900;
