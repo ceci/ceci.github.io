@@ -7,7 +7,7 @@ body {
 	margin: 0 auto;
 }
 header {
-	padding: 20px;
+	padding: 5px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 header h1 {
@@ -22,7 +22,7 @@ header h2 {
 section {
 	display: inline-block;
 	height: 60%;
-	margin: 15px 2px;
+	margin: 1em 0.1em;
 	width: 24%;
 	text-align: center;
 }
