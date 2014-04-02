@@ -45,9 +45,12 @@ section a {
 .developer {
 	background-color: #393;
 }
-
+span {
+	margin-bottom: 20px;
+}
 footer {
 	border-top: 1px solid #111;
+	margin-top: 20px;
 }
 footer a {
 	border: 1px solid;
