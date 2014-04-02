@@ -1,0 +1,58 @@
+body {
+	background-color: #222;
+	color: #ccc;
+}
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+header {
+	padding: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+header h1 {
+	font-size: 4em;
+	margin: 0;
+}
+header h2 {
+	font-size: 1.5em;
+	margin: 0 0.4em;
+}
+
+section {
+	display: inline-block;
+	height: 60%;
+	margin: 15px 2px;
+	width: 24%;
+	text-align: center;
+}
+section a {
+	padding-top: 8em;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5em;
+}
+.myself {
+	background-color: #900;
+}
+.speaker {
+	background-color: #40a;
+}
+.writer {
+	background-color: #C60;
+}
+.developer {
+	background-color: #393;
+}
+
+footer {
+	border-top: 1px solid #111;
+}
+footer a {
+	border: 1px solid;
+	color: #999;
+	display: inline-block;
+	margin: 1em;
+	padding: 10px;
+}
