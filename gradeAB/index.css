@@ -1,0 +1,57 @@
+body {
+	color: #333;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #CCC;
+	margin-bottom: 1em;
+}
+
+thead {
+	font-size: 1.2em;
+}
+
+table td, table th {
+	border: 1px solid #bbb;
+	font-size: 85%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+th {
+	background-color: #468850;
+	color: #eee;
+	font-variant: small-caps;
+	font-weight: normal;
+}
+thead tr th {
+    width: 15%;
+}
+
+.time {
+	width: 10%;
+}
+
+.allHands {
+	background-color: #79bb83;
+}
+
+.invited {
+	background-color: #FFFF77;
+}
+
+.interactive {
+	background-color: #78c5ee;
+}
+
+.wbma {
+	background-color: #e5e5e5;
+}
+
+.authors {
+	display: block;
+	font-size: 75%;
+}
