@@ -30,17 +30,13 @@ header {
 	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #fff;
 	margin-bottom: 0.5em;
-	display: block;
-	clear: both;
 	color: #800;
+	overflow: hidden;
 }
 header img {
+	float: left;
 	margin-right: 0.5em;
 	width: 6em;
-}
-header div {
-	float: right;
-	width: 12.5em;
 }
 header h1 {
 	font-size: 2.2em;
@@ -50,10 +46,9 @@ header p {
 	margin: 0 0.2em;
 	font-weight: bold;
 }
-h2 {
-	font-weight: normal;
-	font-size: 1.4em;
-	color: #555;
+
+article {
+	clear: both;
 }
 em {
 	font-size: 1.1em;
