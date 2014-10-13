@@ -15,44 +15,50 @@ a {
 }
 
 p {
-	margin-top: 1em;
+	margin: 0.5em 0 1em;
 }
 
 /* Everything else */
 body {
 	background-color: #eee;
-	color: #333;
-	padding: 0.5em;
+	color: #533;
 	font-family: 'Asap', sans-serif;
+	border-right: 1em solid #800;
 }
 
 header {
 	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #fff;
-	margin-bottom: 0.5em;
 	color: #800;
-	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+
 }
 header img {
 	float: left;
 	margin-right: 0.5em;
-	width: 6em;
+	width: 6.5em;
 }
 header h1 {
 	font-size: 2.2em;
 }
 header p {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	margin: 0 0.2em;
 	font-weight: bold;
 }
 
 article {
+	padding: 0.5em;
 	clear: both;
 }
 em {
-	font-size: 1.1em;
-	color: #222;
+	font-size: 1.4em;
+	color: #977;
+	clear: both;
+	text-align: center;
+	display: block;
+	margin-bottom: 0.5em;
 }
 .twitter {
 	background: url("../images/twitter-icon.png") no-repeat left center;
