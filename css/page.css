@@ -66,6 +66,9 @@ em {
 .github {
 	background: url("../images/github-icon.png") no-repeat left center;
 }
+.cv {
+	background: url("../images/cv-icon.png") no-repeat left center;
+}
 footer {
 	border-top: 1px solid #999;
 	margin-top: 0.5em;
