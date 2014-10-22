@@ -3,6 +3,28 @@ body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+h2 {
+	font-size: 1.2em;
+	color: #666;
+	margin: 0.2em 0;
+}
+
+ul {
+	font-size: 0.8em;
+	text-align: center;
+	padding: 0.3em 0;
+	margin-top: 0;
+}
+
+li {
+	border-radius: 0.5em;
+	background-color: #eef;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0.1em;
+	padding: 0.3em 0.5em;
+}
+
 table {
 	width: 100%;
 	text-align: center;
@@ -19,6 +41,7 @@ table td, table th {
 	font-size: 85%;
 	text-align: center;
 	vertical-align: middle;
+	padding: 0.25em;
 }
 
 th {
@@ -29,6 +52,11 @@ th {
 }
 thead tr th {
     width: 15%;
+}
+
+a {
+	color: #048;
+	text-decoration: none;
 }
 
 .time {

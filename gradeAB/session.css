@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #333;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding: 0 3%;
+}
+
+h1 {
+	font-size: 1.8em;
+	margin: 0.5em 0;
+	color: #468850;
+}
+
+h3 {
+	margin: 0.8em 0 0.4em;
+	font-size: 1.4em;
+	border-bottom: 1px solid #79bb83;
+	padding-bottom: 0.2em;
+}
+
+p {
+	line-height: 1.4em;
+}
+
+ul {
+	margin-top: 1em;
+}
+
+.authors {
+	list-style: none;
+	padding: 0;
+}
+
+.authors li {
+	display: inline-block;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+.authors li:last-child {
+	margin-bottom: 0;
+}
+
+.authors img {
+	vertical-align: middle;
+	margin-right: 1em;
+}
+
+.authors h2 {
+	font-size: 1.2em;
+	display: inline-block;
+}
+
+.categories li {
+	border: 1px solid #CCC;
+	padding: 0.2em;
+	text-align: center;
+	margin-top: 0.1em;
+}
+
+.tags {
+	text-align: center;
+	margin-bottom: 1em;
+	font-size: 0.9em;
+}
+
+.tags li{
+	background-color: #468850;
+	color: #DDD;
+	display: inline-block;
+	padding: 0.5em;
+	margin: 0.2em 0.2em 0 0;
+	border-radius: 0.5em;
+}
+
+@media (min-width: 768px) {
+	body {
+		padding: 0;
+	}
+
+	.session {
+		border: 1px solid #ccc;
+		box-shadow: 0.5em 0.5em #ddd;
+		margin: 1em auto;
+		padding: 1em;
+		width: 750px;
+		overflow: auto;
+	}
+
+	section {
+		width: 75%;
+		float: left;
+	}
+
+	aside {
+		width: 20%;
+		float: right;
+	}
+}
