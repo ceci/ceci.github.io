@@ -146,16 +146,24 @@ footer a {
 		display: inline-block;
 	}
 
+	.developer li {
+		width: auto;
+		display: block;
+		margin-right: 2em;
+	}
+
 	li img {
 		display: inline;
 		width: 100%;
 	}
 
-	li p {
-		margin-right: 2em;
-	}
-
-	li:last-child p {
+	li:last-child {
 		margin-right: 0;
+	}
+}
+@media(min-width: 1120px) {
+	.developer li {
+		width: 30%;
+		display: inline-block;
 	}
 }
