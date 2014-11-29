@@ -65,6 +65,7 @@ article {
 	padding: 1em;
 	clear: both;
 }
+
 em {
 	font-size: 1.4em;
 	color: #977;
@@ -73,6 +74,21 @@ em {
 	display: block;
 	margin-bottom: 0.5em;
 }
+
+li a {
+	display: block;
+	background-color: #933;
+	color: #fff;
+	padding: 0.25em;
+	margin-bottom: 0.25em;
+	text-align: center;
+	transition: background-color 0.2s linear;
+}
+
+li a:hover {
+	background-color: #600;
+}
+
 .twitter {
 	background: url("../images/twitter-icon.png") no-repeat left center;
 }
@@ -99,5 +115,12 @@ footer a {
 		width: 80%;
 		height: 100%;
 	}
+	ul {
+		text-align: center;
+	}
 
+	li {
+		width: 32%;
+		display: inline-block;
+	}
 }
