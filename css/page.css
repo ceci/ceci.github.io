@@ -129,10 +129,6 @@ footer a {
 }
 
 @media(min-width: 600px) {
-	main {
-		width: 80%;
-	}
-
 	header h1 {
 		font-size: 3em;
 	}
@@ -161,7 +157,11 @@ footer a {
 		margin-right: 0;
 	}
 }
-@media(min-width: 1120px) {
+@media(min-width: 1070px) {
+	main {
+		width: 80%;
+	}
+
 	.developer li {
 		width: 30%;
 		display: inline-block;
