@@ -39,10 +39,10 @@ main {
 header {
 	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #fff;
+	border-bottom: 0.25em solid #800;
 	color: #800;
 	display: inline-block;
 	width: 100%;
-	border-bottom: 0.25em solid #800;	
 }
 
 header img {
@@ -89,6 +89,13 @@ li a {
 	transition: background-color 0.2s linear;
 }
 
+li span {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 li a:hover {
 	background-color: #600;
 }
@@ -118,6 +125,11 @@ footer a {
 	main {
 		width: 80%;
 	}
+
+	header h1 {
+		font-size: 3em;
+	}
+
 	ul {
 		text-align: center;
 	}
