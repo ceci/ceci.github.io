@@ -75,6 +75,10 @@ em {
 	margin-bottom: 0.5em;
 }
 
+li img {
+	display: none;
+}
+
 li a {
 	display: block;
 	background-color: #933;
@@ -113,7 +117,6 @@ footer a {
 @media(min-width: 600px) {
 	main {
 		width: 80%;
-		height: 100%;
 	}
 	ul {
 		text-align: center;
@@ -122,5 +125,10 @@ footer a {
 	li {
 		width: 32%;
 		display: inline-block;
+	}
+
+	li img {
+		display: inline;
+		width: 100%;
 	}
 }
