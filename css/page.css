@@ -12,6 +12,7 @@ html, body {
 
 ul, ol {
 	list-style: none;
+	margin-bottom: 2em;
 }
 
 a {
@@ -19,7 +20,7 @@ a {
 
 }
 p {
-	margin: 0.5em 0 1em;
+	margin-bottom: 1.5em;
 }
 
 /* Everything else */
@@ -39,10 +40,11 @@ main {
 header {
 	font-family: 'Open Sans Condensed', sans-serif;
 	background-color: #fff;
-	border-bottom: 0.25em solid #800;
+	border-bottom: 0.2em solid #800;
 	color: #800;
 	display: inline-block;
 	width: 100%;
+	margin-bottom: 1em;
 }
 
 header img {
@@ -62,7 +64,7 @@ header p {
 }
 
 article {
-	padding: 1em;
+	padding: 0 1em;
 	clear: both;
 }
 
@@ -100,6 +102,10 @@ li a:hover {
 	background-color: #600;
 }
 
+li {
+	text-align: left
+}
+
 .twitter {
 	background: url("../images/twitter-icon.png") no-repeat left center;
 }
@@ -112,6 +118,7 @@ li a:hover {
 footer {
 	border-top: 1px solid #999;
 	margin-top: 0.5em;
+	padding-bottom: 2em;
 	clear: both;
 }
 footer a {
@@ -142,5 +149,13 @@ footer a {
 	li img {
 		display: inline;
 		width: 100%;
+	}
+
+	li p {
+		margin-right: 2em;
+	}
+
+	li:last-child p {
+		margin-right: 0;
 	}
 }
