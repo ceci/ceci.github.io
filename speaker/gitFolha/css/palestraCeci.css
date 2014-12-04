@@ -1,0 +1,76 @@
+.reveal .cover h1{
+	font-size: 10em;
+	display: inline-block;
+	margin: 0 0.1em 0 0;
+}
+.reveal .cover h2 {
+	font-size: 2.8em;
+	display: inline-block;
+	width: 35%;
+	vertical-align: bottom;
+}
+.reveal .whoAmI {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 2em;
+}
+
+.reveal .whoAmI h5 {
+	font-size: 1.2em;
+}
+
+.reveal .whoAmI p {
+	margin: 0;
+}
+
+.reveal .whoAmI a {
+	color: #880000;
+}
+.reveal .whoAmI a:hover {
+	color: #AA0000;
+}
+
+.reveal .end.whoAmI a {
+	color: #0000AA;
+}
+.reveal .end.whoAmI a:hover {
+	color: #2222CC;
+}
+
+.reveal .positive {
+	color: #22FF22;
+}
+.reveal .neutral {
+	color: #2222FF;
+}
+
+.reveal .negative {
+	color: #FF3333;
+}
+.reveal h4 {
+	text-align: left;
+	display: block;
+	margin-bottom: 1em;
+	font-size: 2em;
+	font-family: 'Londrina Sketch', cursive;
+}
+
+.reveal section img {
+	margin: 20px;
+}
+.reveal .reallyBig {
+	font-size: 15em;
+}
+.reveal .bigger {
+	font-size: 3em;
+}
+.reveal .side {
+	float: left;
+}
+/* Fonts */
+.reveal .cursive {
+	font-family: 'Dancing Script', cursive;
+}
+.reveal .attention {
+	font-family: 'Londrina Sketch', cursive;
+}

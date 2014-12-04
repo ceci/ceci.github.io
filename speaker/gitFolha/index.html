@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Controle de Versão com Git - @cecifernandes</title>
+
+	<meta name="description" content="A developer's skills">
+	<meta name="author" content="Ceci Fernandes @cecifernandes">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/darkred.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!-- font imports -->
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+
+	<!-- my css -->
+	<link rel="stylesheet" href="css/palestraCeci.css">
+</head>
+
+<body>
+
+<div class="reveal linear center">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+	<section class="cover">
+		<h1>Git</h1>
+		<h2 class="cursive">Controle de<br>versão<br>moderninho</h2>
+		<div class="whoAmI">
+			<h5>Cecilia Fernandes</h5>
+			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
+			<p><a href="http://github.com/ceci">github.com/ceci</a></p>
+		</div>
+		<img id="caelumLogo" src="caelum-logo.png"/>
+	</section>
+
+	<!-- Perguntas -->
+	<section>
+		<section>
+			<h1 class="attention">Pra começar...</h1>
+		</section>
+		<section>
+			<h4>Pergunta!</h4>
+			<h1 class="fragment">Controle<br>de Versão?</h1>
+		</section>
+		<section>
+			<h4>Pergunta 2</h4>
+			<h1 class="fragment">Versiona o que?</h1>
+		</section>
+		<section>
+			<h4>Pergunta 3</h4>
+			<h1 class="fragment">Por que versiona?</h1>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h1 class="attention">Mais de contexto...</h1>
+		</section>
+		<section>
+			<h4>Tecnologia?</h4>
+			<h1 class="fragment">Qual VCS<br>você usa?</h1>
+		</section>
+		<section>
+			<h4>Tecnologia?</h4>
+			<h1>
+				<span class="fragment neutral" data-fragment-index="5">SVN</span>
+				<span class="fragment negative" data-fragment-index="0">SourceSafe</span>
+				<span class="fragment positive" data-fragment-index="3">Hg</span>
+				<span class="fragment" data-fragment-index="6">PPC-PPL</span>
+				<span class="fragment neutral" data-fragment-index="1">TFS</span>
+				<span class="fragment neutral" data-fragment-index="4">CVS</span>
+				<span class="fragment positive" data-fragment-index="2">Git</span>
+			</h1>
+		</section>
+		<section>
+			<h4>Diferenças de tecnologia</h4>
+			<h1 class="fragment">Locks</h1>
+			<h3 class="negative">Source Safe, ClearCase, etc</h3>
+		</section>
+		<section>
+			<h4>Diferenças de tecnologia</h4>
+			<h1 class="fragment">Assíncrono</h1>
+			<h3 class="neutral">SVN, CVS, etc</h3>
+		</section>
+		<section>
+			<h4>Diferenças de tecnologia</h4>
+			<h1 class="fragment">Assíncrono</h1>
+			<h1 class="fragment">Versões locais</h1>
+			<h1 class="fragment cursive">Moderninho</h1>
+			<h3 class="positive">Git, Hg, etc</h3>
+		</section>
+	</section>
+
+	<section>
+		<section>
+			<h4 class="cursive">Moderninho?</h4>
+			<h1 class="fragment">Pra ser hipster?</h1>
+			<h1 class="fragment attention">Não</h1>
+		</section>
+		<section>
+			<h1 class="attention">Moderninho</h1>
+			<h1 class="fragment">=></h1>
+			<h1 class="fragment attention">Descentralizado</h1>
+		</section>
+		<section>
+			<h4>Descentralizado</h4>
+			<h1 class="fragment">Não precisa de servidor</h1>
+			<h2 class="fragment cursive">Você já configurou um SVN Admin?</h2>
+		</section>
+		<section>
+			<h4>Descentralizado</h4>
+			<h1 class="fragment" data-fragment-index="0">
+				<span class="fragment positive" data-fragment-index="2">Fácil</span>
+				Versionar<br>qualquer coisa!
+			</h1>
+			<h2 class="fragment cursive" data-fragment-index="1">Tipo essa palestra</h2>
+		</section>
+		<section>
+			<h4>Descentralizado</h4>
+			<h1 class="fragment positive" data-fragment-index="1">Fácil fazer</h1>
+			<h2 class="fragment bigger" data-fragment-index="0">commits pequenos</h2>
+		</section>
+	</section>
+	<section>
+		<h1>Por que</h1>
+		<h2 class="bigger">commits pequenos?</h2>
+	</section>
+	<section>
+		<section>
+			<h4>Ou melhor...</h4>
+			<h1>Problema dos</h1>
+			<h2 class="bigger">commits grandes?</h2>
+		</section>
+		<section>
+			<h4>Sabe quando...</h4>
+			<img src="images/arquivo.png">
+		</section>
+		<section>
+			<h4>Sabe quando...</h4>
+			<img src="images/arquivo_comAlteracao.png">
+		</section>
+		<section>
+			<h4>Sabe quando...</h4>
+			<img src="images/arquivo_outraAlteracao.png">
+		</section>
+		<section>
+			<h4>Sabe quando...</h4>
+			<img src="images/arquivo_areaModificada.png">
+		</section>
+		<section>
+			<h4>Ao mesmo tempo...</h4>
+			<img class="side" src="images/arquivo_alteracaoColega.png">
+			<span class="fragment bigger"><br><strong>E ele commitou primeiro</strong></span>
+		</section>
+		<section>
+			<h4>Sabe quando...</h4>
+			<img class="side" src="images/arquivo_alteracaoColega.png">
+			<img src="images/arquivo_areaModificada.png">
+		</section>
+		<section>
+			<h4>Hmm...</h4>
+			<img class="side" src="images/arquivo_conflito.png">
+			<h1 class="fragment attention"><br>Conflito!</h1>
+			<h1 class="fragment">:-(</h1>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h4>Então...</h4>
+			<h2 class="bigger">Commits pequenos!</h2>
+		</section>
+		<section>
+			<h4>Com commits pequenos...</h4>
+			<img src="images/arquivo.png">
+		</section>
+		<section>
+			<h4>Com commits pequenos...</h4>
+			<img src="images/arquivo_comAlteracao.png">
+		</section>
+		<section>
+			<h4>Com commits pequenos...</h4>
+			<img src="images/arquivo_outraAlteracao.png">
+		</section>
+		<section>
+			<h4>Ao mesmo tempo...</h4>
+			<img class="side" src="images/arquivo_alteracaoColega.png">
+			<span class="fragment bigger"><br><strong>E ele commitou primeiro</strong></span>
+		</section>
+		<section>
+			<h4>Com commits pequenos...</h4>
+			<img class="side" src="images/arquivo_alteracaoColega.png">
+			<img src="images/arquivo_outraAlteracao.png">
+		</section>
+		<section>
+			<h4>Com commits pequenos...</h4>
+			<h1 class="fragment">Sem problemas!</h1>
+		</section>
+	</section>
+
+
+	<section class="cover">
+		<h1>Git</h1>
+		<h2 class="cursive">Controle de<br>versão<br>moderninho</h2>
+		<div class="whoAmI">
+			<h5>Cecilia Fernandes</h5>
+			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
+			<p><a href="http://github.com/ceci">github.com/ceci</a></p>
+		</div>
+		<img id="caelumLogo" src="caelum-logo.png"/>
+	</section>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		dependencies: [
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+
+</script>
+
+</body>
+</html>
