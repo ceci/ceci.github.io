@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@page {
+	size: A4;
+	margin: 0;
+}
+
+html, body {
+	height: 297mm;
+	font-size: 15vw;
+	color: #000;
+	padding-left: 18mm;
+}
+
+body {
+	padding: 3vw;
+}
+
+ul {
+	padding: 20mm 0 0 0;
+	line-height: 1.8;
+	text-align: center;
+	page-break-after: always;
+}
+li:first-child {
+	margin: 40mm 0;
+}
+li {
+	width: 100%;
+	list-style: none;
+}
