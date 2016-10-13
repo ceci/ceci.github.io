@@ -61,68 +61,14 @@
 	color: #333;
 }
 
-.reveal .filhosEspacadinhos {
-	line-height: 1.5em;
-	word-spacing: 1em;
-}
-
-.reveal .deLadinho > li {
-	display: inline-block;
-	margin: 1em 2em 0 0;
-	vertical-align: top;
-}
-
-.reveal .stories {
-	border-collapse: separate;
-	border-spacing: 0.5em;
-	width: 100%;
-}
-
-.reveal .stories td {
-	border: 1px solid #000;
-	padding: 0.8em;
-	margin: 0.2em;
-	vertical-align: middle;
-}
-
-.reveal .stories td:nth-child(1) {
-	width: 30%;
-}
-
-.reveal .stories td:nth-child(2) {
-	width: 40%;
-}
-
-.reveal .stories .epic {
-	font-size: 170%;
-	line-height: 1.2em;
-	text-align: center;
-}
-
-.reveal .bucketList h4 {
-	color: white;
-	margin-bottom: 5em;
-	margin-left: -0.5em;
-}
-
-.reveal .bucketList h5 {
-	color: #633;
-	font-family: 'Dancing Script', cursive;
-	font-size: 125%;
-	text-align: left;
-	margin: 0.1em 2em;
-	transform:rotate(10.7deg);
-}
-
-.reveal .kanban h1{
-	font-family: 'Dancing Script', cursive;
-	font-size: 2.8em;
-	margin-left: 3em;
-	margin-top: 0.8em;
-}
-
 .reveal section img {
 	margin: 20px;
+}
+
+.reveal section h5 {
+	display: inline;
+	font-size: 2.5em;
+	padding: 0.2em 0.5em;
 }
 
 .reveal h4 {
