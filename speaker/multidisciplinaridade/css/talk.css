@@ -1,0 +1,108 @@
+#languageSwitch {
+	color: #fff;
+	cursor: pointer;
+	font-variant: small-caps;
+	position: absolute;
+		right: 1.5em;
+		top: 1em;
+	text-decoration: none;
+	z-index: 1;
+}
+
+.reveal section.cover {
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 1.5em;
+	margin-left: 8em;
+	padding-right: 1em;
+	text-align: right;
+	width: 23em;
+}
+
+.reveal .cover h1{
+	font-size: 3em;
+	margin-left: 0.25em;
+}
+.reveal .cover h2 {
+	margin-top: -0.2em;
+	font-size: 4em;
+	margin-bottom: 0.5em;
+}
+.reveal .cover h4 {
+	text-align: right;
+	font-family: inherit;
+	font-size: 1.6em;
+	margin-bottom: 0.2em;
+}
+
+.reveal .whoAmI {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.reveal .whoAmI a {
+	font-size:1.2em;
+	margin-right:0.3em;
+	display: block;
+	clear: both;
+	color: rgba(0,0,0, 0.4);
+}
+
+.reveal .whoAmI a:hover {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.reveal .whoAmI #twLogo {
+	margin: -0.5em -0.8em;
+	width: 55%;
+}
+
+.reveal .cover a {
+	color: #333;
+}
+
+.reveal section img {
+	margin: 20px;
+}
+
+.reveal section h5 {
+	display: inline;
+	font-size: 2.5em;
+	padding: 0.2em 0.5em;
+}
+
+.reveal h4 {
+	text-align: left;
+	font-family: 'Londrina Sketch', cursive;
+	font-size: 3em;
+}
+
+.reveal .smaller {
+	font-size: 70%;
+}
+
+.reveal .reallyBig {
+	font-size: 15em;
+}
+
+.reveal .bigger {
+	font-size: 150%;
+	line-height: 1.5em;
+}
+
+/* Colors */
+.reveal .positive {
+	color: #22FF22;
+}
+
+.reveal .negative {
+	color: #FF3333;
+}
+
+/* Fonts */
+.reveal .cursiveFont {
+	font-family: 'Dancing Script', cursive;
+}
+.reveal .attentionFont {
+	font-family: 'Londrina Sketch', cursive;
+}
