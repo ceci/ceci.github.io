@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>BDD with no tools</title>
+
+	<meta name="description" content="BDD with no tools">
+	<meta name="author" content="Ceci Fernandes">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="../css/reveal.css">
+	<link rel="stylesheet" href="../css/theme/base.css" id="theme">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="../css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!-- font imports -->
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+
+	<!-- my css -->
+	<link rel="stylesheet" href="../css/thoughtworks.css">
+</head>
+
+<body>
+<a id="languageSwitch" href="../index.html">Em português</a>
+
+<div class="reveal linear center english">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+	<section class="cover">
+		<h1>BDD</h1>
+		<h2>without<br>any tools</h2>
+		<div class="whoAmI">
+			<h3>Ceci Fernandes</h3>
+			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
+			<p><a href="http://github.com/ceci">github.com/ceci</a></p>
+		</div>
+		<a href="http://www.thoughtworks.com">
+			<img src="../images/thoughtworks_black_logo.png" alt="ThoughtWorks Logo">
+		</a>
+	</section>
+	<section>
+		<h4>Warning!</h4>
+		<h1 class="fragment">experimental session</h1>
+	</section>
+	<section>
+		<section>
+			<h4>Before anything else...</h4>
+			<h1 class="fragment">three important activities</h1>
+		</section>
+		<section>
+			<h1>Technique to bring everyone back together</h1>
+		</section>
+		<section>
+			<h1>Rearranging groups</h1>
+		</section>
+		<section>
+			<h1>Who are the people around you?</h1>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h4>Show of hands</h4>
+			<h2 class="fragment">ever heard of BDD</h2>
+			<h2 class="fragment">gave it a try</h2>
+			<h2 class="fragment">uses it on a daily basis</h2>
+		</section>
+		<section>
+			<h4>BDD</h4>
+			<h1 class="fragment">What words come to mind?</h1>
+		</section>
+		<section>
+			<h4>What I hear most?</h4>
+			<h1 class="fragment negative">Tool</h1>
+			<h2 class="fragment otherSide cursive negative">followed by Cucumber</h2>
+		</section>
+		<section>
+			<h1 class="attention negative">Noooooo...</h1>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h1>Obsession with tools</h1>
+			<h3 class="fragment cursive">DANGER!</h3>
+		</section>
+		<section>
+			<h2 class="fragment cursive negative">Tools are fine; but the solution to the software apocalypse is not more tools.</h2>
+			<h2 class="fragment cursive positive">The solution is better programming discipline.</h2>
+			<br>
+			<a href="http://blog.cleancoder.com/uncle-bob/2017/10/04/CodeIsNotTheAnswer.html" target="_blank" class="fragment otherSide">Uncle Bob @ Tools are not the answer</a>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h1>BDD is discipline</h1>
+			<h2 class="cursive otherSide">not tools</h2>
+		</section>
+		<section>
+			<h4>BDD - "Rules"</h4>
+			<h2 class="fragment">Test names must be sentences</h2>
+			<h2 class="fragment">Test names should be expressive</h2>
+			<h2 class="fragment">Start with the most relevant behavior</h2>
+			<h2 class="fragment">Automate the tests</h2>
+		</section>
+		<section>
+			<h4>BDD - Process</h4>
+			<h2 class="fragment">Think about the feature</h2>
+			<h2 class="fragment">... before doing it</h2>
+			<h2 class="fragment">Break it into scenarios</h2>
+			<h2 class="fragment">Pick one to start</h2>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h4>Let's start with the requirements</h4>
+			<h1 class="fragment">what format?</h1>
+		</section>
+		<section>
+			<h1>[title]</h1>
+			<h2>In order to...</h2>
+			<h2>I, as a...</h2>
+			<h2>Want...</h2>
+		</section>
+		<section>
+			<h2>Jedi Early Bird Agile Brazil registration</h2>
+			<h3>In order to... <span class="light cursive">make sure I'm going to Agile Brazil paying the least possible amount</span></h3>
+			<h3>I, as a... <span class="light cursive">interested agilist</span></h3>
+			<h3>Want... <span class="light cursive">pay way less if I buy it before everyone else does</span></h3>
+		</section>
+		<section>
+			<h2>Jedi Early Bird Agile Brazil registration</h2>
+			<h3>In order to... <span class="light cursive">get the money wheel rolling and measure the interest on next year's conference</span></h3>
+			<h3>I, as a... <span class="light cursive">conference organizer pig</span></h3>
+			<h3>Want... <span class="light cursive">tp offer a great discount for registrations that happen in 2017, limited to 100</span></h3>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h4>[2'] In groups...</h4>
+			<h1>What is the most important scenario?</h1>
+		</section>
+		<section>
+			<h4>[5'] Refactor it!</h4>
+			<h1>Defined format</h1>
+			<h2 class="fragment">Given... <span class="light">pre-conditions</span></h2>
+			<h2 class="fragment">When... <span class="light">action</span></h2>
+			<h2 class="fragment">Then... <span class="light">expected outcome</span></h2>
+		</section>
+		<section>
+			<h1>What are we missing?</h1>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h1>What we need to discuss is...</h1>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h2>1. Why do we all have to think about the behavior?</h2>
+		</section>
+		<section>
+			<h4>Caipira Agil attendees mentioned...</h4>
+			<li>Leveling information about the feature</li>
+			<li>Focus on what needs to get done</li>
+			<li>Avoidance of bad surprises on validation</li>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h2>2. Why think about the behavior before coding?</h2>
+		</section>
+		<section>
+			<h4>Caipira Agil attendees mentioned...</h4>
+			<li>Possibility to pre-validate behavior</li>
+			<li>Estimates get easier with a broader understanding</li>
+			<li>Focusing on what is important</li>
+			<li>Avoiding doing more than necessary (simplicity)</li>
+			<li>Test code reuse, maybe</li>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h2>3. What are the advantages of acceptance test automation?</h2>
+			<h2 class="fragment otherSide">And what are the costs?</h2>
+			<br>
+			<a href="https://github.com/caelum/calopsita/blob/master/src/test/integration/br/com/caelum/calopsita/integration/stories/AddCardOnAnIterationStory.java" class="otherSide" target="_blank">Example: Calopsita Project automated tests</a>
+			<a href="https://www.agilealliance.org/glossary/acceptance" class="otherSide" target="_blank">Further reading: Acceptance Tests at AgileAlliance.org</a>
+		</section>
+		<section>
+			<h4>Caipira Agil attendees mentioned...</h4>
+			<li>Safety, regression and coverage</li>
+			<li>Avoiding domino effect</li>
+			<li>Mimics the user, but without human variation</li>
+			<li>Cheaper and faster than manual testing</li>
+			<li>Easier for newcomers to understand the business</li>
+			<li>Less effort for deliveries and development</li>
+			<li class="negative">Way slower and more expensive to run than unit tests</li>
+			<li class="negative">Acceptance tests cost more to implement, too</li>
+			<li class="negative">More unstable than other kinds of tests</li>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h2>4. What are the advantagem of writing "natural language" tests?</h2>
+			<h2 class="fragment otherSide">And what are the costs?</h2>
+			<br>
+			<a href="https://github.com/cucumber/cucumber/wiki/Scenario-Outlines" class="otherSide" target="_blank">Example: Cucumber scenarios</a>
+			<a href="http://www.jamesshore.com/Blog/The-Problems-With-Acceptance-Testing.html" class="otherSide" target="_blank">Further reading: James Shore's experiences on natural language testing</a>
+		</section>
+		<section>
+			<h4>Caipira Agil attendees mentioned...</h4>
+			<li>The client can understand automated tests too</li>
+			<li>It helps if your client requires a test report in natural language</li>
+			<li>Theoretically, the client can be involved in test writing</li>
+			<li class="negative">In real life, the client won't read tests on our code</li>
+			<li class="negative">An extra layer of code increases complexity</li>
+			<li class="negative">The code behind natural languages are harder to understand</li>
+			<li class="negative">It can be more difficult to identify repeated code</li>
+			<li class="negative">The compiler won't help you (in many tech stacks)</li>
+		</section>
+	</section>
+	<section class="cover end">
+		<h1>BDD</h1>
+		<h2>without<br>any tools</h2>
+		<div class="whoAmI">
+			<h3>Ceci Fernandes<br>& Caipira Agil attendees</h3>
+			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
+			<p><a href="http://cecifernandes.com">cecifernandes.com</a></p>
+		</div>
+		<a href="http://www.thoughtworks.com">
+			<img src="../images/thoughtworks_black_logo.png" alt="ThoughtWorks Logo">
+		</a>
+	</section>
+</div>
+
+<script src="../lib/js/head.min.js"></script>
+<script src="../js/reveal.min.js"></script>
+
+<script>
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		dependencies: [
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+
+</script>
+
+</body>
+</html>

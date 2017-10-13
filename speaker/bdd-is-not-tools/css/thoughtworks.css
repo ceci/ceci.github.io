@@ -6,6 +6,16 @@
 	color: #f78f31; // orange
 	color: #fee0c9; // beige
 */
+#languageSwitch {
+	color: #fff;
+	cursor: pointer;
+	font-variant: small-caps;
+	position: absolute;
+		right: 1.5em;
+		top: 1em;
+	text-decoration: none;
+	z-index: 1;
+}
 
 .reveal .cover h1{
 	font-size: 6em;
@@ -20,7 +30,9 @@
 	width: 35%;
 	vertical-align: bottom;
 }
-
+.reveal.english .cover h2 {
+	font-size: 2.5em;
+}
 .reveal .whoAmI {
 	display: inline-block;
 	margin-top: 1em;
@@ -40,15 +52,6 @@
 .reveal .whoAmI h3 {
 	font-weight: normal;
 	font-size: 1.2em;
-}
-
-.reveal .end.whoAmI a,
-.reveal .whoAmI a {
-	color: #fee0c9;
-}
-.reveal .end.whoAmI a:hover,
-.reveal .whoAmI a:hover {
-	color: #f78f31;
 }
 
 .reveal .positive {
