@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+
+	<title>BDD sem ferramentas</title>
+
+	<meta name="description" content="BDD sem ferramentas">
+	<meta name="author" content="Ceci Fernandes">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/base.css" id="theme">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!-- font imports -->
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+
+	<!-- my css -->
+	<link rel="stylesheet" href="css/thoughtworks.css">
+</head>
+
+<body>
+
+<div class="reveal linear center">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+	<section class="cover">
+		<h1>BDD</h1>
+		<h2>sem usar<br>ferramentas</h2>
+		<div class="whoAmI">
+			<h3>Ceci Fernandes</h3>
+			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
+			<p><a href="http://github.com/ceci">github.com/ceci</a></p>
+		</div>
+		<a href="http://www.thoughtworks.com">
+			<img src="images/thoughtworks_black_logo.png" alt="ThoughtWorks Logo">
+		</a>
+	</section>
+	<section>
+		<h4>Aviso!</h4>
+		<h1 class="fragment">sessão experimental</h1>
+	</section>
+	<section>
+		<section>
+			<h4>Antes de qualquer coisa...</h4>
+			<h1 class="fragment">Três coisas</h1>
+		</section>
+		<section>
+			<h1>Técnica rápida pra voltar ao foco</h1>
+		</section>
+		<section>
+			<h1>Rearranjando grupos</h1>
+		</section>
+		<section>
+			<h1>Quem são as pessoas à sua volta?</h1>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h4>Show of hands</h4>
+			<h2 class="fragment">ouviu falar de BDD</h2>
+			<h2 class="fragment">tentou usar</h2>
+			<h2 class="fragment">usa no dia-a-dia</h2>
+		</section>
+		<section>
+			<h4>BDD</h4>
+			<h1 class="fragment">Que palavras tem vem à mente?</h1>
+		</section>
+		<section>
+			<h4>O que eu mais ouço?</h4>
+			<h1 class="fragment negative">Ferramenta</h1>
+			<h2 class="fragment otherSide cursive negative">seguido de Cucumber</h2>
+		</section>
+		<section>
+			<h1 class="attention negative">Noooooo...</h1>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h1>Fixação por ferramentas</h1>
+			<h3 class="fragment cursive">DANGER!</h3>
+		</section>
+		<section>
+			<h2 class="fragment cursive negative">Tools are fine; but the solution to the software apocalypse is not more tools.</h2>
+			<h2 class="fragment cursive positive">The solution is better programming discipline.</h2>
+			<br>
+			<a href="http://blog.cleancoder.com/uncle-bob/2017/10/04/CodeIsNotTheAnswer.html" target="_blank" class="fragment otherSide">Uncle Bob @ Tools are not the answer</a>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h1>BDD é disciplina</h1>
+			<h2 class="cursive otherSide">não ferramentas</h2>
+		</section>
+		<section>
+			<h4>BDD - "Regras"</h4>
+			<h2 class="fragment">Nomes de testes devem ser frases</h2>
+			<h2 class="fragment">Nomes de testes devem ser expressivos</h2>
+			<h2 class="fragment">Comece o comportamento mais importante</h2>
+			<h2 class="fragment">Automatize o teste</h2>
+		</section>
+		<section>
+			<h4>BDD - Processo</h4>
+			<h2 class="fragment">Pensar na funcionalidade</h2>
+			<h2 class="fragment">... antes de começar</h2>
+			<h2 class="fragment">Quebrar em cenários</h2>
+			<h2 class="fragment">Começar pelo mais simples</h2>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h4>Comecemos pelo requisito</h4>
+			<h1 class="fragment">qual formato?</h1>
+		</section>
+		<section>
+			<h1>[Título]</h1>
+			<h2>Para...</h2>
+			<h2>Eu, no papel de...</h2>
+			<h2>Quero...</h2>
+		</section>
+		<section>
+			<h2>Jedi Early Bird pra Agile Brazil</h2>
+			<h3>Para... <span class="light cursive">garantir que vou ao Agile Brazil 2018 em Campinas com o melhor preço possível</span></h3>
+			<h3>Eu, no papel de... <span class="light cursive">agilista interessada</span></h3>
+			<h3>Quero... <span class="light cursive">pagar um preço bem menor se eu comprar ingresso antes de todo mundo</span></h3>
+		</section>
+		<section>
+			<h2>Jedi Early Bird pra Agile Brazil</h2>
+			<h3>Para... <span class="light cursive">criar capital de giro desde cedo e medir o interesse na conferência</span></h3>
+			<h3>Eu, no papel de... <span class="light cursive">pig da conferência</span></h3>
+			<h3>Quero... <span class="light cursive">oferecer um desconto expressivo para quem se inscrever nesse ano, limitado a 50 inscrições</span></h3>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h4>[2'] Em grupo...</h4>
+			<h1>Qual o cenário mais importante?</h1>
+		</section>
+		<section>
+			<h4>[5'] Refatoração!</h4>
+			<h1>Formato definido</h1>
+			<h2 class="fragment">Dado que... <span class="light">pré-condições</span></h2>
+			<h2 class="fragment">Quando faço... <span class="light">ação</span></h2>
+			<h2 class="fragment">Então... <span class="light">resultado esperado</span></h2>
+		</section>
+		<section>
+			<h1>O que falta?</h1>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h1>O que eu quero discutir com vocês...</h1>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h2>1. Quais as vantagens de pensar no comportamento de um requisito?</h2>
+		</section>
+		<section>
+			<h4>Participantes do Caipira Ágil mencionaram...</h4>
+			<li>Nivelamento da informação do requisito</li>
+			<li>Foco sobre o que vai ser feito</li>
+			<li>Evitar retrabalho na validação</li>
+			<li>Dá pra pré-validar com cliente</li>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h2>2. Quais as vantagens de pensar no comportamento ANTES de codar?</h2>
+		</section>
+		<section>
+			<h4>Participantes do Caipira Ágil mencionaram...</h4>
+			<li>Visão maior do escopo facilita estimativas</li>
+			<li>Foca no que é importante</li>
+			<li>Evita fazer a mais (simplicidade)</li>
+			<li>Reaproveitamento de código de teste</li>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h2>3. Quais as vantagens de automatizar esses testes?</h2>
+			<h2 class="fragment otherSide">E quais os custos?</h2>
+			<br>
+			<a href="https://www.agilealliance.org/glossary/acceptance" class="otherSide">Leitura relacionada: Acceptance Tests na AgileAlliance.org</a>
+		</section>
+		<section>
+			<h4>Participantes do Caipira Ágil mencionaram...</h4>
+			<li>Segurança/regressão/cobertura</li>
+			<li>Evita efeito dominó</li>
+			<li>Imita usuário, sem falhas humanas</li>
+			<li>Mais barato e rápido do que testar manualmente</li>
+			<li>Novos integrantes do time entendem o negócio</li>
+			<li>Menos tempo pra entrega e dev</li>
+			<li class="negative">Muito mais lento e caro que testes de unidade</li>
+			<li class="negative">Custo de implementar o teste é maior</li>
+			<li class="negative">Mais instável que outros tipos de teste</li>
+		</section>
+	</section>
+	<section>
+		<section>
+			<h2>4. Quais as vantagens de escrever testes em linguagem natural?</h2>
+			<h2 class="fragment otherSide">E quais os custos?</h2>
+			<br>
+			<a href="http://www.jamesshore.com/Blog/The-Problems-With-Acceptance-Testing.html" class="otherSide">Leitura relacionada: experiência do James Shore com testes em linguagem natural</a>
+		</section>
+		<section>
+			<h4>Participantes do Caipira Ágil mencionaram...</h4>
+			<li>Cliente consegue entender também</li>
+			<li>Se seu cliente exige um relatório escrito em linguagem natural</li>
+			<li>Teoricamente, consigo envolver o cliente na escrita</li>
+			<li class="negative">Na vida real: o cliente não lê testes no repo de código</li>
+			<li class="negative">Uma camada a mais de código, aumenta complexidade</li>
+			<li class="negative">Mais difícil de entender o código por trás da linguagem natural</li>
+			<li class="negative">Quebra um pouco o reaproveitamento de código de teste</li>
+		</section>
+	</section>
+	<section class="cover end">
+		<h1>BDD</h1>
+		<h2>sem usar<br>ferramentas</h2>
+		<div class="whoAmI">
+			<h3>Ceci Fernandes<br>e galera do Caipira Ágil</h3>
+			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
+			<p><a href="http://cecifernandes.com">cecifernandes.com</a></p>
+		</div>
+		<a href="http://www.thoughtworks.com">
+			<img src="images/thoughtworks_black_logo.png" alt="ThoughtWorks Logo">
+		</a>
+	</section>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		dependencies: [
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+
+</script>
+
+</body>
+</html>
