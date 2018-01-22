@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+article {
+    background-color: white;
+    border-left: 1px solid #eee;
+    box-shadow: 0.2em 0.2em 0.5em #ccc;
+    font-family: 'Open sans', sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 2em;
+}
+
+section {
+  margin-top: 5em;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+h1 + h2 {
+    color: #999;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    font-weight: normal;
+    margin-top: 0;
+}
