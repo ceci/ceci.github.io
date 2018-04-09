@@ -2646,21 +2646,24 @@
 				width: calc(100% - 10px);
 			}
 
-		.main .goto-next, .main .goto-back {
+		.main .goto-next, .main .goto-back, .main .goto-more {
 			-moz-transition: background-color 0.2s ease-in-out;
 			-webkit-transition: background-color 0.2s ease-in-out;
 			-ms-transition: background-color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out;
 			background-color: rgba(255, 85, 102, 0.8);
+			border-radius: 2em;
+			border: 0;
+			display: inline-block;
+			height: 4em;
+			line-height: 4em;
+		}
+
+		.main .goto-next, .main .goto-back {
 			background-position: center center;
 			background-repeat: no-repeat;
-			border-radius: 100%;
-			border: 0;
 			bottom: 3em;
-			display: block;
-			height: 4em;
 			left: 50%;
-			line-height: 4em;
 			margin-left: -2em;
 			overflow: hidden;
 			position: absolute;
@@ -2676,6 +2679,15 @@
 		.main .goto-back {
 			background-image: url("images/arrow-up.svg");
 		}
+		
+		.main .goto-more {
+			color: rgba(255, 255, 255, 0.8);
+			padding: 0 1em;	
+		}
+
+			.main .goto-more:hover {
+				color: #fff !important;
+			}
 
 			.main .goto-next:hover, .main .goto-back:hover {
 				background-color: rgba(255, 85, 102, 0.5);
