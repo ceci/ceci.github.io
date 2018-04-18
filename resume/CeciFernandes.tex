@@ -1,7 +1,8 @@
 \documentclass[a4paper, 10pt, onecolumn]{report}
-\usepackage[left=1in, top=1in, right=1in, nohead, nofoot]{geometry}
+\usepackage[left=0.5in, top=1in, right=0.5in, nohead]{geometry}
 \usepackage[dvips]{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
 \usepackage{hyperref}
 
 \hypersetup{colorlinks=false,
@@ -10,60 +11,88 @@
 			pdfborderstyle={/S/U/W 0.5}
 			}
 
+\setlist[itemize,1]{label=$\bullet$, leftmargin=*}
+\setlist[itemize,2]{label=$\diamond$}
+
 \newcommand{\linkImage}{\includegraphics[height=2ex]{linkIcon}}
 
 \pagestyle{empty}
 % Name and contact information
 \newcommand{\name}{Cecilia Fernandes}
-\newcommand{\addr}{R. Prof. Maria Pacheco Nobre, 35}
-\newcommand{\compl}{04326-110 Sao Paulo, SP - Brazil}
-\newcommand{\github}{http://github.com/ceci}
 \newcommand{\email}{contact@cecifernandes.com}
 \newcommand{\phone}{+55-11-99133-8144}
 \newcommand{\site}{http://cecifernandes.com}
+\newcommand{\github}{http://github.com/ceci}
 
 \begin{document}
 
 %The document itself
 \begin{center}{\Huge\scshape\name}\end{center}
 \vspace{-8pt} \rule{\textwidth}{1pt}
-\vspace{-1pt} {\it{\small \addr \hfill \email \\\compl \hfill \site \\\phone \hfill \github}}
+\vspace{-1pt} {\textit{\small \email \hfill \site \\\phone \hfill \github}}
 \\
 \\
 {\large\textbf{Experience}} \hspace{0.5em}\hrulefill
 
 \begin{itemize}
-\item{\textbf{Caelum} (March/2008 - September/2016) \hfill \textbf{Sao Paulo -- Brazil}\\
-	\indent{Caelum is a well known professional training group in Brazil, composed of premium training sessions (Caelum), online courses (Alura) and a publisher (Casa do Código).
+
+\item{\textbf{ThoughtWorks} (October/2016 - current) \hfill \textbf{Sao Paulo -- Brazil}
+	\begin{itemize}
+		\item{\textbf{Lead Consultant}\\
+			Worked as a developer and consultant helping different clients reduce operation costs, expand their market, and take smarter decisions about their own work force, through agile development of applications. [how do I tell the story of what practices, architectures and techniques I am comfortable with...]
+		}
+	\end{itemize}
+}
+
+\item{\textbf{Caelum} (July/2007 - September/2016) \hfill \textbf{Sao Paulo -- Brazil}\\
+	\indent{Caelum is a well known professional training group in Brazil, composed of premium training sessions at Caelum, online courses at Alura, and a technical books publisher called Casa do Codigo.
 
 	\begin{itemize}
 		\item{\textbf{Coach and Culture Champion}\\
-			Coached teams and individuals helping them become more effective and take intentional actions towards solving their challenges and doubts. Maintained and evolved the company culture while it grew from 18 to 130 employees. Lead the team responsible for building the company's ERP jugling coding and building new learderships.
+			Coached teams and individuals helping them become more effective and mindful while solving their challenges and doubts. Maintained and evolved the company culture while it grew from 18 to 130 employees. Lead the team responsible for building the company's ERP by coding and building new learders.
 		}
 
 		\item{\textbf{Instructor}\\
-			Taught (this many) students on topics ranging from Programming Languages to Continuous Deployment. Created the company's Agile courses and delivered trainings all over Brazil and also in Mozambique. Created the online platform Scrum course, which has been watched by 8.5k+ people and graded 9.2 out of 10. Trained a number of successful trainers in didatics.
+			Trained more than 2000 students on topics ranging from Logics to Continuous Deployment. Developed Caelum's Agile courses and delivered trainings all over Brazil, and also in Mozambique. Created Alura's Scrum course, watched by 8.5k+ people and graded 9.2/10. Trained new trainers in didatics and techniques.
 		}
 
-		\item{\textbf{Agile and Consultant Mentor}\\
+		\item{\textbf{Agile Consultant and Mentor}\\
 			Worked with teams in clients helping them understand how Agile could work in their own environment, with particular focus on visibility, continuous improvement, experimenting, and iterating fast.
 		}
 	\end{itemize}
 }
 
-\item{\textbf{Agile Brazil (July/2011 - present)}\\
-\indent{Agile Brazil is the largest Agile conference in the South Hemisphere and it is completely organized by passionate agilists in their own time. It has been a valuable experience because it is a year-round work that consistently delivers a one thousand attendees conference with a geographically distributed, ever changing group of organizers.
-
-As a team player on the core comittee and chair to Program, I have created an environment that allowed everyone in my team to collaborate, criticize, and enhance not only their outcome but also the process that lead to it. I was also responsible for the creation of the Volunteers program, which comes with its own challenges: conference volunteers often meet for the first time the day before the event and they have to become a team almost immediately $-$ and that has been not only achieved, but also multiplied by those at their local conferences.
-\\www.agilebrazil.com}}
-
-\item{\textbf{IBM Research (December/2007 - March/2008)}\\
-\indent{I was one of three chosen undergraduate interns for the K42 group in TJ Watson IBM Research. I have hacked and debugged an object oriented C++ filesystem in order to make it work with the 2.6 version of Linux kernel.
-\\www.research.ibm.com/K42/}}
-
-\item{\textbf{Caelum (July/2007 - December/2007)}\\
-\indent{As an intern at Caelum, I developed mainly opensource software, including Caelum Stella, a library focused on the Brazilian developer needs, and Tubaina, a textbook generator used by both Caelum and a Brazilian technical books publisher named Casa do C\'{o}digo. I was also one of the people responsible for keeping the classrooms infrastructure running through the administration of 45 to 90 Linux running computers.}}
+\item{\textbf{IBM Research} (December/2007 - March/2008) \hfill \textbf{New York -- USA}
+	\begin{itemize}
+		\item{\textbf{Advanced Operating Systems Intern}\\
+			Hacked and debugged the K42 object oriented filesystem in C++, in order to make it compatible with the Linux kernel.
+		}
+	\end{itemize}
+}
 \end{itemize}
+\\
+{\large\textbf{Community}} \hspace{0.5em}\hrulefill
+\\
+\begin{itemize}
+\item{\textbf{Agile Alliance Brazil Board Member} (January/2017 - current)
+	Responsible for the Initiatives program, which gathers community members who have ideas that will help the growth, expansion, and evolution of the Brazilian agile community and knowledge base, and provides support to these engaged individuals. [Rephrase...]
+}
+
+\item{\textbf{Agile Brazil Organizer} (July/2011 - present)\\
+	\indent{Agile Brazil is the largest Agile conference in Latin America, and it is completely organized by passionate agilists in their own time.
+
+	\begin{itemize}
+		\item{\textbf{Program chair} (2013 - 2015 editions)\\
+			Delivered conference programs, leading about 60 people each year -- including the Program committee, track leads, and reviewers -- from basic definitions up until the after conference feedbacks, with perceived improvements on diversity and attendees satisfaction levels. Engaged people and made them successors for the position.
+		}
+
+		\item{\textbf{Volunteers leader} (2012 and 2013 editions)\\
+			Created the Volunteers Program, nowadays replicated by many IT conferences in Brazil. Former Agile Brazil volunteers have lead similar Programs in their own community events. Consistently built teams that met face-to-face for the first time on the day before the conference, and performed beautifully.
+		}
+	\end{itemize}
+}
+\end{itemize}
+
 \\
 {\large\textbf{Education}} \hspace{0.5em}\hrulefill
 \\
