@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49591534-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-49591534-1');
+	</script>
+	
+	<meta charset="utf-8">
+	<title>Desenvolvimento ágil em um mundo de produtos</title>
+
+	<meta name="description" content="Desenvolvimento ágil em um mundo de produtos">
+	<meta name="author" content="Ceci Fernandes">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/base.css" id="theme">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!-- font imports -->
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+
+	<!-- my css -->
+	<link rel="stylesheet" href="css/thoughtworks.css">
+</head>
+
+<body>
+<!--a id="languageSwitch" href="en/index.html">In English</a-->
+
+<div class="reveal linear center">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+	<section class="cover">
+		<h1>Desenvolvimento ágil</h1>
+		<h2>num mundo de produtos</h2>
+		<div class="whoAmI">
+			<h3>Ceci Fernandes</h3>
+			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
+		</div>
+		<a href="http://www.thoughtworks.com">
+			<img src="images/thoughtworks_white_logo.png" alt="ThoughtWorks Logo">
+		</a>
+	</section>
+	<section>
+		<h1>TBD...</h1>
+	</section>
+
+	<section class="cover">
+		<h1>Desenvolvimento ágil</h1>
+		<h2>num mundo de produtos</h2>
+		<div class="whoAmI">
+			<h3>Ceci Fernandes</h3>
+			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
+		</div>
+		<a href="http://www.thoughtworks.com">
+			<img src="images/thoughtworks_white_logo.png" alt="ThoughtWorks Logo">
+		</a>
+	</section>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		dependencies: [
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+
+</script>
+
+</body>
+</html>
