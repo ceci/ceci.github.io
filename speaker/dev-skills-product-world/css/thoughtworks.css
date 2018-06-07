@@ -115,6 +115,13 @@
 .reveal .bigger {
 	font-size: 3em;
 }
+.reveal .attention.bigger {
+	font-size: 5em;
+}
+.reveal .left{
+	text-align: left;
+	margin-left: 1em;
+}
 .reveal .side {
 	float: left;
 }
