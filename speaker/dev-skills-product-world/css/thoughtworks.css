@@ -122,6 +122,10 @@
 	text-align: left;
 	margin-left: 1em;
 }
+.reveal .right{
+	text-align: right;
+	margin-right: 1em;
+}
 .reveal .side {
 	float: left;
 }
