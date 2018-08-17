@@ -34,6 +34,41 @@
   ul.initiatives li span {
     color: #287fd6;
   }
+
+  .infograficoIniciativas {
+    border-bottom: 1px solid #287fd6;
+    border-top: 1px solid #287fd6;
+    display: block;
+    margin-bottom: 4em;
+  }
+
+  .infograficoIniciativas h3 {
+    color: #287fd6;
+    display: inline-block;
+  }
+
+  .infograficoIniciativas h3::after {
+    content: "❯";
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  .infograficoIniciativas input[type=checkbox]:checked + h3::after {
+    transform: rotate(90deg);
+  }
+
+  .infograficoIniciativas input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type=checkbox] ~ img {
+    display: none;
+  }
+
+  input[type=checkbox]:checked ~ img {
+    display: block;
+    margin: 0 auto;
+  } 
 </style>
 
 <h1>Iniciativas</h1>
@@ -61,7 +96,7 @@
       <h3>Sua iniciativa!</h3>
       <span>Você</span>
 
-      <p>Sabemos que muitos agilistas nacionais têm excelentes ideias que deixam de ser colocadas em prática por conta de riscos financeiros e legais ou da falta de estrutura. Se você tem uma ideia que não se encaixa nas iniciativas atuai e precisa de apoio, <a href="#">submeta sua ideia</a>!</p>
+      <p>Sabemos que muitos agilistas nacionais têm excelentes ideias que deixam de ser colocadas em prática por conta de riscos financeiros e legais ou da falta de estrutura. Se você tem uma ideia que não se encaixa nas iniciativas atuais e precisa de apoio, <a href="#submetaIniciativa">submeta sua ideia</a>!</p>
     </li>
   </ul>
 </section>
@@ -94,8 +129,14 @@
   </ul>
 </section>
 
-<section>
+<section id="submetaIniciativa">
   <h2>Submeta sua iniciativa!</h2>
 
-  <p>Não encontrou o que procurava e acredita que você poderia ajudar a sua comunidade de outra forma? Conheça o processo de submissão para novas Iniciativas para a Agile Alliance Brazil e fale conosco!</p>
+  <p>Não encontrou o que procurava e acredita que você poderia ajudar a sua comunidade de outra forma? <a href="https://cecifernandes.typeform.com/to/wLcJUk">preencha o formulário</a> para começarmos uma conversa!</p>
+
+  <label class="infograficoIniciativas">
+    <input type="checkbox">
+    <h3>Conheça o processo de submissão</h3>
+    <img src="https://www.agilealliance.org/wp-content/uploads/2017/07/Infografico_AAB.jpg" alt="processo de submissao de iniciativas detalhado">
+  </label>
 </section>
