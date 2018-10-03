@@ -25,6 +25,7 @@
 	margin-right: 2em;
 }
 .reveal .whoAmI h4 {
+	font-family: "Montserrat";
 	font-size: 1.5em;
 }
 
@@ -36,6 +37,7 @@
 
 .reveal .cover #twLogo {
 	margin: 0;
+	padding: 0;
 	width: 50vw;
 }
 
@@ -56,14 +58,6 @@
 
 .reveal .negative {
 	color: #FF3333;
-}
-
-.reveal h4 {
-	text-align: left;
-	display: block;
-	margin-bottom: 1em;
-	font-size: 2em;
-	font-family: 'Londrina Sketch', cursive;
 }
 .reveal .author {
 	text-align: right;
