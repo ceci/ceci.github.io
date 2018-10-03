@@ -60,7 +60,10 @@
 
 .reveal h4 {
 	text-align: left;
-	font-size: 3em;
+	display: block;
+	margin-bottom: 1em;
+	font-size: 2em;
+	font-family: 'Londrina Sketch', cursive;
 }
 .reveal .author {
 	text-align: right;
@@ -100,4 +103,8 @@
   display: inline-block;
   vertical-align: middle;
   margin-right: 2em;
+}
+
+.right {
+	text-align: right;
 }
