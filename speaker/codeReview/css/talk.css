@@ -66,6 +66,19 @@
 .reveal section img {
 	margin: 20px;
 }
+
+.reveal section a {
+  background: url(../images/download-exercise.svg) no-repeat;
+  background-size: 66px;
+	background-position-x: 10px;
+	background-position-y: center;
+	border: 1px solid #aaa;
+	display: inline-block;
+	margin: 1em;
+	padding: 1em 0.8em 1em 3em;
+	text-decoration: none;
+}
+
 .reveal .reallyBig {
 	font-size: 15em;
 }

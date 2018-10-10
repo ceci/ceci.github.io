@@ -55,12 +55,14 @@ body {
   -moz-transition: color .15s ease;
   -ms-transition: color .15s ease;
   -o-transition: color .15s ease;
-  transition: color .15s ease; }
+  transition: color .15s ease;
+}
 
 .reveal a:not(.image):hover {
   color: #f3d7ac;
   text-shadow: none;
-  border: none; }
+  background-color: rgba(255, 255, 255, 0.15);
+}
 
 .reveal .roll span:after {
   color: #fff;
@@ -82,10 +84,6 @@ body {
   -o-transition: all .2s linear;
   transition: all .2s linear; }
 
-.reveal a:hover img {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: #e7ad52;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
