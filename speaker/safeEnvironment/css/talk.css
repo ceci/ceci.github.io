@@ -21,8 +21,8 @@
 
 .reveal .whoAmI {
 	display: inline-block;
-	vertical-align: middle;
-	margin-right: 2em;
+	vertical-align: super;
+	margin: 0 1em;
 }
 .reveal .whoAmI h4 {
 	font-family: "Montserrat";
@@ -35,11 +35,19 @@
 	color: rgba(255, 255, 255, 0.4);
 }
 
+.reveal section.cover img {
+	padding: 0;
+}
+
 .reveal .cover .logos {
 	margin: 0;
 	padding: 0;
-	width: 30vw;
+	width: 25vw;
 	display: inline-block;
+}
+
+.reveal .cover .logos .twLogo {
+	width: 9em;
 }
 
 .reveal .whoAmI a:hover {
