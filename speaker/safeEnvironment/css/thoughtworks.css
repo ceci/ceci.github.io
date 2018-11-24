@@ -1,0 +1,114 @@
+/*
+	color: #80c9d2; // lightblue
+	color: #b11c54; // strongPink
+	color: #6a2569; // purple
+	color: #11aa58; // green
+	color: #f78f31; // orange
+	color: #fee0c9; // beige
+*/
+#languageSwitch {
+	color: #fff;
+	cursor: pointer;
+	font-variant: small-caps;
+	position: absolute;
+		right: 1.5em;
+		top: 1em;
+	text-decoration: none;
+	z-index: 1;
+}
+
+.reveal .positive {
+	color: #b11c54;
+}
+.reveal .neutral {
+	color: #2255FF;
+}
+
+.reveal .negative {
+	color: #6a2569;
+}
+.reveal h4 {
+	text-align: left;
+	display: block;
+	margin-bottom: 0.5em;
+	font-size: 3em;
+	font-family: 'Londrina Sketch', cursive;
+}
+
+.reveal section img {
+	padding: 20px;
+}
+
+.reveal table {
+	border: 1px solid #fff;
+}
+
+.reveal .sideBySide {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 45%;
+}
+
+.reveal .light {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.reveal table.sideBySide th.dificulty {
+	width: 10%;
+}
+
+.reveal td, .reveal th {
+	text-align: center;
+	width: 8em;
+	border: 1px solid #966;
+	vertical-align: middle;
+	padding: 0.2em;
+}
+
+.reveal thead tr {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.reveal .zebra {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.reveal .reallyBig {
+	font-size: 15em;
+}
+.reveal .bigger {
+	font-size: 3em;
+	margin-bottom: 1em !important;
+}
+.reveal .attention.bigger {
+	font-size: 5em;
+}
+.reveal .left{
+	font-size: 1.5em;
+	text-align: left;
+	margin-left: 0;
+	margin-bottom: 2em;
+}
+.reveal .right{
+	text-align: right;
+	margin-right: 0;
+	margin-top: 2em;
+}
+
+.reveal .littleSmaller {
+	font-size: 0.8em;
+}
+
+.reveal .side {
+	float: left;
+}
+.reveal .otherSide {
+	float: right;
+}
+/* Fonts */
+.reveal .cursive {
+	font-family: 'Dancing Script', cursive;
+}
+.reveal .attention {
+	font-family: 'Londrina Sketch', cursive;
+}

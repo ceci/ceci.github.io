@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49591534-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-49591534-1');
+	</script>
+
+	<meta charset="utf-8">
+	<title>Ambiente Seguro, seguro pra quem?</title>
+
+	<meta name="description" content="Ambiente seguro?">
+	<meta name="author" content="Ceci Fernandes @cecifernandes">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/codeReviewTheme.css" id="theme">
+	<link rel="stylesheet" href="css/talk.css" id="theme">
+	<link rel="stylesheet" href="css/thoughtworks.css" id="theme">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!-- font imports -->
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+
+	<!-- my css -->
+	<link rel="stylesheet" href="css/talk.css">
+</head>
+
+<body>
+<div class="reveal linear center">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+	<section class="cover" data-background="images/cover.jpg">
+		<h1 class="attentionFont">Ambiente seguro</h1>
+		<h2 class="cursiveFont">Seguro pra quem?</h2>
+		<div class="whoAmI">
+			<h4>Ceci Fernandes</h4>
+			<a href="http://cecifernandes.com">cecifernandes.com</a>
+			<a href="http://twitter.com/cecifernandes">@cecifernandes</a>
+		</div>
+		<div class="logos">
+			<img src="images/thoughtworks-logo.png"/>
+		</div>
+	</section>
+	<section>
+		<h1 class="attentionFont">Ambiente seguro?</h1>
+		<h1 class="fragment cursiveFont">O que é isso?</h1>
+	</section>
+	<section>
+		<h4>Quero exemplos seus!</h4>
+		<h1 class="fragment cursiveFont">Em um <strong>ambiente seguro</strong>, não tenho medo de...</h1>
+	</section>
+	<section>
+		<h2 class="cursiveFont">Será que todo mundo se sente assim</h2>
+		<h1 class="attentionFont fragment">no seu ambiente?</h1>
+	</section>
+	<section>
+		<h1>Bora criar um ambiente seguro juntos</h1>
+		<h1 class="fragment cursiveFont">ainda que temporário</h1>
+	</section>
+	<section>
+		<h2 class="left">Honrando o que definimos...</h2>
+		<h1 class="fragment cursiveFont">Você já sentiu
+			<span class="attentionFont littleSmaller">insegurança</span><br>
+			no ambiente de trabalho?</h1>
+		<h3 class="right fragment">Compartilhe entre pares</h3>
+	</section>
+	<section>
+		<h1 class="left attentionFont bigger">Pra levar...</h1>
+		<h2 class="fragment side">1. Acordos de trabalho claros</h2>
+		<h2 class="fragment side">2. Abra espaço pra fala</h2>
+		<h2 class="fragment side">3. Discuta segurança</h2>
+	</section>
+	<section>
+			<h1 class="left attentionFont bigger">Pra hoje...</h1>
+			<h2 class="fragment side">Almoce com pelo menos 1 pessoa que você não conhece!</h2>
+		</section>
+	</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		dependencies: [
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+
+</script>
+
+</body>
+</html>
