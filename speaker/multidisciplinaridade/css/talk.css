@@ -17,7 +17,11 @@
 	text-align: right;
 	width: 23em;
 }
-
+.reveal.en section.cover {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
 .reveal .cover h1{
 	font-size: 3em;
 	margin-left: 0.25em;
@@ -33,11 +37,37 @@
 	font-size: 1.6em;
 	margin-bottom: 0.2em;
 }
+.reveal.en .cover h4 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.reveal.en .whoAreWe {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 3em;
+}
 
 .reveal .whoAmI {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: right;
+}
+.reveal.en .whoAreWe .whoAmI {
+	text-align: center;
+}
+.reveal.en .whoAmI h5 {
+	font-size: 1.2em;
+}
+
+.reveal.en .whoAmI p {
+	font-size: 1em;
+	margin-bottom: 0;
+}
+
+.reveal.en .cover p,
+.reveal.en .cover a {
+	font-size: 0.75em;
 }
 
 .reveal .whoAmI a {
@@ -88,6 +118,10 @@
 .reveal .bigger {
 	font-size: 150%;
 	line-height: 1.5em;
+}
+
+.reveal .right {
+	text-align: right;
 }
 
 /* Colors */
