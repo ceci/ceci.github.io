@@ -1,3 +1,19 @@
+#languageSwitch {
+	color: rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	font-variant: small-caps;
+	position: absolute;
+		top: 1em;
+		right: 1em;
+	text-decoration: none;
+	z-index: 1;
+}
+#istaffing-logo {
+	position: absolute;
+		top: 1em;
+		left: 1em;
+	width: 6em;
+}
 .reveal .cover h1{
 	font-size: 4em;
 	display: inline-block;
@@ -8,18 +24,41 @@
 	vertical-align: bottom;
 	margin-bottom: 1em;
 }
+.reveal.en .cover h1 {
+	font-size: 5em;
+}
+.reveal.en .cover h2 {
+	font-size: 2.4em;
+	display: inline-block;
+	margin-bottom: 0;
+	width: 6em;
+}
 .reveal .whoAmI {
 	display: inline-block;
 	vertical-align: middle;
 }
+.reveal.en .whoAreWe {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2em;
+}
 .reveal .whoAmI h5 {
 	font-size: 1.2em;
+}
+.reveal.en .whoAmI h5 {
+	padding: 0;
 }
 .reveal .whoAmI a {
 	color: #fbb;
 }
 .reveal .whoAmI a:hover {
 	color: #fdd;
+}
+.reveal.en .whoAmI a {
+	color: #a2fcf0;
+}
+.reveal.en .whoAmI a:hover {
+	color: #c8fcf5;
 }
 .reveal #twLogo {
 	width: 35%;
@@ -29,6 +68,9 @@
 }
 .reveal .highlighted {
 	color: #ff0;
+}
+.reveal.en .highlighted {
+	color: #a2fcf0;
 }
 
 .reveal .negative {
@@ -44,26 +86,6 @@
 
 .reveal section img {
 	margin: 20px;
-}
-
-.reveal table {
-	border: 1px solid #fff;
-}
-
-.reveal td, .reveal th {
-	text-align: center;
-	width: 8em;
-	border: 1px solid #966;
-	vertical-align: middle;
-	padding: 0.2em;
-}
-
-.reveal thead tr {
-	background-color: rgba(0, 0, 0, 0.4);
-}
-
-.reveal .zebra {
-	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .reveal .reallyBig {
