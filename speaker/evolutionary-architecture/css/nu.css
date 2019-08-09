@@ -95,6 +95,11 @@
 .reveal .negative {
 	color: #6a2569;
 }
+
+.reveal .author {
+	color: #ca8ee2;
+}
+
 .reveal h4 {
 	text-align: left;
 	display: block;
