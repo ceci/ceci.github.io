@@ -19,7 +19,10 @@
 }
 
 .reveal .cover h1,
-.reveal .cover h2,
+.reveal .cover h2 {
+	color: #4d1069;
+}
+
 .reveal .cover h3 {
 	color: #222;
 }
@@ -41,7 +44,8 @@
 	display: inline-block;
 	margin: 0 0.1em 0 0;
 	font-variant: small-caps;
-	line-height: 0.8em;
+	line-height: 1em;
+	transform: scale(1, 1.4);
 }
 
 .reveal .whoAmI {
@@ -100,6 +104,10 @@
 	color: #ca8ee2;
 }
 
+.reveal .esvp {
+	width: 80%;
+}
+
 .reveal h4 {
 	text-align: left;
 	display: block;
@@ -124,7 +132,7 @@
 }
 
 .reveal .light {
-	color: rgba(255, 255, 255, 0.5);
+	color: #ca8ee2;
 }
 
 .reveal table.sideBySide th.dificulty {
