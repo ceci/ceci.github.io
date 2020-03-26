@@ -4,19 +4,21 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>M&Ms Ice Breaker</h1>
-    <h2>Remote version</h2>
+    <div class="container">
+        <h1>M&Ms Ice Breaker</h1>
+        <h2>Remote version</h2>
 
-    <button id="randomize">Pick one</button>
-
-    <div class="mm red">Hobby you have</div>
-    <div class="mm green">Food you love</div>
-    <div class="mm yellow">Movie you like</div>
-    <div class="mm orange">Places you traveled to</div>
-    <div class="mm purple">Memorable or embarassing moment</div>
-    <div class="mm blue">Share anything</div>
-    <div id="nothing"></div>
-
+        <button id="randomize">Pick one</button>
+    </div>
+    <div class="container">
+        <div class="mm red">Hobby you have</div>
+        <div class="mm green">Food you love</div>
+        <div class="mm yellow">Movie you like</div>
+        <div class="mm orange">Places you traveled to</div>
+        <div class="mm purple">Memorable or embarassing moment</div>
+        <div class="mm blue">Share anything</div>
+        <div id="nothing"></div>
+    </div>
     <style type="text/css">
         * {
             font-family: 'Indie Flower', cursive;
@@ -24,6 +26,7 @@
 
         body {
             margin: 2em;
+            display: flex;
         }
 
         h1, h2 {
@@ -64,7 +67,7 @@
     <script type="text/javascript">
         const colors = ["red", "green", "yellow", "orange", "purple", "blue"];
         let selected = nothing;
-        
+
         function pickMm() {
             selected.style.display = "none";
             let position = Math.round(Math.random() * 100) % colors.length;
