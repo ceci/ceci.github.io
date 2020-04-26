@@ -1,35 +1,96 @@
-* {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-@page {
-	size: A4;
-	margin: 0;
-}
-
-html, body {
-	height: 297mm;
-	font-size: 15vw;
-	color: #000;
-	padding-left: 18mm;
-}
-
-body {
-	padding: 3vw;
-}
-
-ul {
-	padding: 20mm 0 0 0;
-	line-height: 1.8;
-	text-align: center;
-	page-break-after: always;
-}
-li:first-child {
-	margin: 40mm 0;
-}
 li {
 	width: 100%;
 	list-style: none;
+}
+
+
+@media print {
+	* {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	@page {
+		size: A4;
+		margin: 0;
+	}
+
+	html, body {
+		height: 297mm;
+		font-size: 15vw;
+		color: #000;
+		padding-left: 18mm;
+	}
+
+	body {
+		padding: 3vw;
+	}
+
+	ul {
+		padding: 20mm 0 0 0;
+		line-height: 1.8;
+		text-align: center;
+		page-break-after: always;
+	}
+	li:first-child {
+		margin: 40mm 0;
+	}
+
+	.instructions {
+		display: none;
+	}
+}
+
+@media screen {
+	body {
+		margin: 1em;
+		line-height: 1.5em;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		background-color: #ffbe76;
+	}
+
+	.instructions {
+		display: inline-block;
+		max-width: 40vw;
+		margin-right: 2em;
+	}
+
+	.instructions h1 {
+		margin-bottom: 1.5em;
+	}
+
+	.instructions p {
+		background-color: rgba(255, 255, 255, 0.3);
+		border-radius: 1em;
+		padding: 1em;
+	}
+
+	.instructions p em {
+		display: block;
+		margin-top: 1em;
+		text-align: right;
+	}
+
+	ul {
+		background-color: #fff;
+		box-sizing: border-box;
+		border: 1px solid #bbb;
+		display: inline-block;
+		margin: 1em;
+		padding: 2em 1em;
+		text-align: center;
+		min-width: 200px;
+		width: 15vw;
+	}
+
+	ul {
+		display: none;
+	}
+
+	li:first-child {
+		margin-bottom: 1em;
+		font-weight: 400;
+	}
 }

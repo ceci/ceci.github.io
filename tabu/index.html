@@ -3,9 +3,20 @@
 <head>
 	<title>Jogo Tabu</title>
 	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="cartas.css">
 </head>
 <body>
+
+<div class="instructions">
+	<h1>Jogo do Tabú</h1>
+
+	<p>
+		<strong>O jogo é simples:</strong> o objetivo é descrever a palavra no alto do cartão para os outros jogadores -- mas sem usar nenhuma das outras palavras do cartão sorteado!
+
+		<em>Já usou sua palavra, recarregue a página para receber outra! ↻</em>
+	</p>
+</div>
 
 <ul>
 <li>ALGODÃO DOCE</li>
@@ -28,7 +39,7 @@
 <li>Feriado</li>
 <li>Independência</li>
 <li>Inconfidência Mineira</li>
-<li style="font-size:70%;">Joaquim J. Silva Xavier</li>
+<li>Joaquim J. Silva Xavier</li>
 <li>Forca</li>
 </ul>
 <ul>
@@ -140,7 +151,7 @@
 <li>Raquete</li>
 <li>Quadra</li>
 <li>Bola</li>
-<li>GustavoKuerten/Guga</li>
+<li>Nomes de jogadores</li>
 <li>Rede</li>
 </ul>
 <ul>
@@ -184,7 +195,7 @@
 <li>Forte</li>
 </ul>
 <ul>
-<li>PONTO DE INTERROGAÇÃO</li>
+<li>INTERROGAÇÃO</li>
 <li>Pontuação</li>
 <li>Sentença</li>
 <li>Exclamação</li>
@@ -4440,7 +4451,7 @@
 <li>Vermelho</li>
 </ul>
 <ul>
-<li>ESCORREDOR DE MACARRÃO</li>
+<li>ESCORREDOR</li>
 <li>Massa</li>
 <li>Buracos</li>
 <li>Tigela</li>
@@ -7975,22 +7986,11 @@
 <li>James Bond</li>
 <li>Disfarce</li>
 </ul>
-<ul>
-<li>VITOR PASSARELA</li>
-<li>Internet</li>
-<li>Corinthians</li>
-<li>Zona Leste</li>
-<li>Carteira</li>
-<li>Academia</li>
-</ul>
-<ul>
-<li>CAELUM</li>
-<li>Trabalho</li>
-<li>Zueira</li>
-<li>Coca Cola</li>
-<li>Escola</li>
-<li>Desenvolvimento</li>
-</ul>
+<script>
+	let cards = document.getElementsByTagName("ul");
+	var selected = Math.round(Math.random()*cards.length);
+	cards[selected].style.display = "inline-block";
+</script>
 
 </body>
 </html>
