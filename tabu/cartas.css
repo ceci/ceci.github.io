@@ -1,3 +1,7 @@
+body {
+	line-height: 1.5em;
+}
+
 li {
 	width: 100%;
 	list-style: none;
@@ -5,6 +9,7 @@ li {
 
 li:first-child {
 	font-weight: 400;
+	margin-bottom: 1em;
 }
 
 
@@ -22,23 +27,25 @@ li:first-child {
 
 	html, body {
 		height: 297mm;
-		font-size: 15vw;
+		width: 210mm;
+		font-size: 2vw;
 		color: #000;
 		padding-left: 18mm;
 	}
 
-	body {
-		padding: 3vw;
+	ul {
+		border: 1px solid #999;
+		box-sizing: border-box;
+		display: inline-block;
+		margin: 3mm 1mm;
+		padding-top: 1em;
+		height: 60mm;
+		width: 48mm;
+		text-align: center;
 	}
 
-	ul {
-		padding: 20mm 0 0 0;
-		line-height: 1.8;
-		text-align: center;
-		page-break-after: always;
-	}
-	li:first-child {
-		margin: 40mm 0;
+	ul:nth-child(20n+2) {
+		margin-top: 2em;
 	}
 
 	.instructions {
@@ -49,7 +56,6 @@ li:first-child {
 @media screen {
 	body {
 		margin: 1em;
-		line-height: 1.5em;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
 		background-color: #fab1a0;
@@ -93,9 +99,5 @@ li:first-child {
 
 	ul {
 		display: none;
-	}
-
-	li:first-child {
-		margin-bottom: 1em;
 	}
 }
