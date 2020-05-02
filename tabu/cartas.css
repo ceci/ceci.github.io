@@ -50,7 +50,7 @@ li:first-child {
 		margin-top: 2em;
 	}
 
-	.instructions {
+	.instructions, .contribute {
 		display: none;
 	}
 }
@@ -84,6 +84,18 @@ li:first-child {
 		text-align: right;
 	}
 
+	.contribute {
+		background-color: rgba(0, 0, 0, 0.4);
+		font-weight: 400;
+		text-decoration: none;
+		color: #fab1a0;
+		position: fixed;
+		top: 2.5em;
+		right: -3.5em;
+		transform: rotate(45deg);
+		padding: 0.5em 3em;
+	}
+
 	ul {
 		background-color: #fff;
 		box-sizing: border-box;
@@ -114,7 +126,7 @@ li:first-child {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 630px) {
 	body {
 		margin-bottom: 0;
 	}
@@ -126,6 +138,10 @@ li:first-child {
 
 	.instructions h1 {
 		margin-bottom: 1em;
+	}
+
+	.contribute {
+		display: none;
 	}
 
 	ul {
