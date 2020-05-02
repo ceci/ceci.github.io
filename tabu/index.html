@@ -3,6 +3,7 @@
 <head>
 	<title>Jogo Tabu</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="cartas.css">
 </head>
@@ -7989,7 +7990,7 @@
 <script>
 	let cards = document.getElementsByTagName("ul");
 	var selected = Math.round(Math.random()*cards.length);
-	cards[selected].style.display = "inline-block";
+	cards[selected].className = "show";
 </script>
 
 </body>

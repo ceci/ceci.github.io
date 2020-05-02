@@ -93,11 +93,43 @@ li:first-child {
 		margin: 1em;
 		padding: 2em 1em;
 		text-align: center;
+		transform: translateY(-1em);
 		min-width: 200px;
 		width: 15vw;
 	}
 
 	ul {
 		display: none;
+	}
+
+	ul.show {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 500px) {
+	body {
+		margin-bottom: 0;
+	}
+
+	.instructions {
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.instructions h1 {
+		margin-bottom: 1em;
+	}
+
+	ul {
+		font-size: 6vw;
+		line-height: 1.5;
+		margin: 1.5em auto 0;
+		min-width: 270px;
+		width: 15vw;
+	}
+
+	ul.show {
+		display: block;
 	}
 }
