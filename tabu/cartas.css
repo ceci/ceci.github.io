@@ -107,6 +107,13 @@ li:first-child {
 	}
 }
 
+@media (max-width: 1000px) {
+	.instructions {
+		max-width: 55vw;
+		margin-right: 1em;
+	}
+}
+
 @media (max-width: 500px) {
 	body {
 		margin-bottom: 0;
