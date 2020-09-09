@@ -43,6 +43,11 @@ h2 {
     text-align: right;
 }
 
+.instructions a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 ul.mms {
     padding-inline-start: 0;
     margin-block-start: 0;

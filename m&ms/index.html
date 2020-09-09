@@ -18,7 +18,7 @@
             
             This is a remote version of the original "M&Ms" icebreaker. Each color of M&M has a theme. Your task is to share something about yourself.
     
-            <em>Refresh to get a new one! ↻</em>
+            <em>Refresh to get a new one! <a href="#" onclick="refreshPage()">↻</a></em>
         </p>
     </div>
 
@@ -39,6 +39,10 @@
         let position = Math.round(Math.random() * 100) % colors.length;
         let selected = document.getElementsByClassName(colors[position])[0];
         selected.className += " show";
+
+        function refreshPage() {
+            window.location.reload();
+        }
     </script>
 </body>
 </html>
