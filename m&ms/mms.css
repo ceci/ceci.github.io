@@ -1,4 +1,3 @@
-
 * {
     font-family: 'Indie Flower', cursive;
 }
@@ -6,19 +5,22 @@
 body {
     background-color: #eadffb;
     margin: 2em;
-    display: flex;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 h1, h2 {
     color: #833471;
     line-height: 0.9;
-    margin: 0 auto;
+    margin: 0;
 }
 
 h2 {
     opacity: 0.5;
 }
+
 .instructions {
     font-size: 1.3em;
     max-width: 600px;
@@ -46,21 +48,31 @@ h2 {
     text-decoration: inherit;
 }
 
+ul.mms {
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 ul.mms li {
     display: none;
 }
 
 ul.mms li.show {
     color: rgba(255, 255, 255, 0.6);
-    display: inline-block;
     box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
     box-sizing: border-box;
     border-radius: 50%;
     font-size: 2.8em;
-    padding: 3em 2em;
     text-align: center;
     width: 450px;
-    height: 450px;
+    height: 450px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contribute {
@@ -76,50 +88,13 @@ ul.mms li.show {
 }
 
 
-@media (max-width: 1000px) {
-    .instructions {
-        font-size: 0.8em;
-        max-width: 50vw;
-    }
-
-    ul.mms li.show {
-        font-size: 5vw;
-        padding: 2.5em 1.5em;
-        width: 40vw;
-        height: 40vw;
-    }
-
-    ul.mms li.purple {
-        padding: 2em 1em;
-    }
-}
-
 @media (max-width: 630px) {
-    body {
-        flex-direction: column;
-    }
-
-    .instructions {
-        max-width: unset;
-    }
-
-    ul.mms {
-        box-sizing: border-box;
-        padding-left: 0;
-        margin: 0 auto;
-        vertical-align: middle;
-    }
 
     ul.mms li.show {
-        font-size: 2em;
-        margin: 0 auto;
-        padding-top: 3em;
+        font-size: 7vw;
+        padding: 2.5em 1.5em;
         width: 80vw;
         height: 80vw;
-    }
-
-    ul.mms li.purple {
-        font-size: 1.8em;
     }
 
     .contribute {
@@ -132,6 +107,4 @@ ul.mms li.show {
 .yellow { background-color: #f39c12;}
 .orange { background-color: #d35400;}
 .blue { background-color: #2980b9;}
-ul.mms li.purple { 
-    background-color: #8e44ad;
-}
+.purple { background-color: #8e44ad;}
