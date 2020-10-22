@@ -21,7 +21,7 @@
 
 .reveal .whoAmI {
 	display: inline-block;
-	vertical-align: super;
+	vertical-align: middle;
 	margin: 0 1em;
 }
 .reveal .whoAmI h4 {
