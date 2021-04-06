@@ -1,0 +1,42 @@
+html {
+    font-family: Roboto, sans-serif;
+    padding: 1em;
+}
+
+h1.conference {
+    display: none;
+}
+
+h2.dates {
+    font-size: 48px;
+    padding-right: 1.5em;
+}
+
+.ab-logo {
+    margin-top: 1em;
+    max-width: 50vw;
+}
+
+p {
+    color: #666;
+}
+
+.information p {
+    font-size: 17px;
+}
+
+hr {
+    background: rgb(20,115,50);
+    background: linear-gradient(90deg, rgba(20,115,50,1) 0%, rgba(255,165,6,1) 100%);
+    border: 0;
+    height: 2px;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social svg {
+    display: inline-block;
+    width: 32px;
+}
