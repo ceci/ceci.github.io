@@ -1,5 +1,7 @@
 html {
+    color: #666;
     font-family: Roboto, sans-serif;
+    font-size: 14px;
     padding: 1em;
 }
 
@@ -8,22 +10,19 @@ h1.conference {
 }
 
 h2.dates {
+    color: black;
     font-size: 48px;
     max-width: 65vw;
 }
 
 .ab-logo {
     margin-top: 1em;
-    max-width: 50vw;
-}
-
-p {
-    color: #666;
-    font-size: 14px;
+    width: 50vw;
+    max-width: 250px;
 }
 
 .information p {
-    font-size: 17px;
+    font-size: 120%;
 }
 
 hr {
@@ -33,11 +32,28 @@ hr {
     height: 2px;
 }
 
+.social {
+    padding-top: 2em;
+}
+
 .social a {
     text-decoration: none;
 }
 
 .social svg {
     display: inline-block;
-    width: 32px;
+    width: 2.34em;
+}
+
+@media (min-width: 550px) {
+    body {
+        font-size: 150%;
+        margin: 4em 6em;
+        max-width: 400px;
+    }
+
+    h2.dates {
+        font-size: 70px;
+        margin-bottom: 0.4em;
+    }
 }
