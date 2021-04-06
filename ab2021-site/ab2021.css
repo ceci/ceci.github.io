@@ -9,7 +9,7 @@ h1.conference {
 
 h2.dates {
     font-size: 48px;
-    padding-right: 1.5em;
+    max-width: 65vw;
 }
 
 .ab-logo {
@@ -19,6 +19,7 @@ h2.dates {
 
 p {
     color: #666;
+    font-size: 14px;
 }
 
 .information p {
