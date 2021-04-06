@@ -41,8 +41,13 @@ hr {
 }
 
 .social svg {
+    color: #cccccc;
     display: inline-block;
     width: 2.34em;
+}
+
+.social a:hover svg {
+    color: #bbbbbb;
 }
 
 @media (min-width: 550px) {
