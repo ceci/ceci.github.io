@@ -40,10 +40,18 @@ hr {
     text-decoration: none;
 }
 
+.social div {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    width: 100%;
+}
+
 .social svg {
     color: #cccccc;
     display: inline-block;
-    width: 2.34em;
+    width: 2.1em;
+    padding-right: 0.58em;
 }
 
 .social a:hover svg {
