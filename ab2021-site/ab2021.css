@@ -5,6 +5,14 @@ html {
     padding: 1em;
 }
 
+.agileAlliance img {
+    position: fixed;
+    top: 0;
+    right: 1.15em;
+    width: 100px;
+    max-width: 30%;
+}
+
 h1.conference {
     display: none;
 }
@@ -65,6 +73,12 @@ hr {
         font-size: 150%;
         margin: 4em 6em;
         max-width: 400px;
+    }
+
+    .agileAlliance img {
+        right: 6em;
+        width: 150px;
+        max-width: 15%;
     }
 
     h2.dates {
