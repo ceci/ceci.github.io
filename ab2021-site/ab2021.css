@@ -60,6 +60,8 @@ hr {
 
 @media (min-width: 550px) {
     body {
+        background: url(call-your-friends.svg) no-repeat top 10em right 6em;
+        background-size: 36vw;
         font-size: 150%;
         margin: 4em 6em;
         max-width: 400px;
