@@ -24,6 +24,7 @@
 .cover .whoAmI .contact {
     display: inline-block;
     line-height: 1.15;
+    margin-right: 7rem;
 }
 
 .cover .whoAmI .contact > * {
@@ -39,6 +40,12 @@
 }
 
 .cover .whoAmI img {
+    box-sizing: border-box;
     max-height: 4em;
     margin-bottom: 0;
+    padding: 0.5em;
+}
+
+.cover .whoAmI img.nu-logo {
+    padding: 1em 0.5em;
 }
