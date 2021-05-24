@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Londrina+Sketch&display=swap');
+
+/* Fonts */
+
+.reveal .cursiveFont {
+	font-family: 'Dancing Script', cursive;
+}
+
+.reveal .attentionFont {
+	font-family: 'Londrina Sketch', cursive;
+}
+
+/* Generic modifiers */
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.reveal .littleSmaller {
+	font-size: 0.8em;
+}
+
+/* HTML hacks */
+
+.reveal h4 {
+	text-align: left;
+	display: block;
+	margin-bottom: 0.5em;
+	font-size: 3em;
+	font-family: 'Londrina Sketch', cursive;
+}
+
+
+/* Cover */
+
 .cover {
     line-height: 0.8;
     text-align: left;
@@ -13,39 +53,58 @@
 
 .cover .whoAmI {
     box-sizing: border-box;
-    justify-content: space-between;
-    margin-top: 2em;
-}
-
-.cover .whoAmI > * {
-    margin-right: 3vw;
+    margin-top: 1.5em;
 }
 
 .cover .whoAmI .contact {
     display: inline-block;
     line-height: 1.15;
-    margin-right: 7rem;
+    margin-right: 6rem;
+    vertical-align: super;
 }
 
 .cover .whoAmI .contact > * {
     display: block;
 }
 
-.cover .whoAmI .contact h4 {
-    margin-bottom: 0.5em;
+.cover .whoAmI .contact h3 {
+    font-size: 110%;
+    margin-bottom: 0.3em;
 }
 
 .cover .whoAmI .contact a {
     font-size: 84%;
 }
 
+.cover .whoAmI .contact a:hover {
+    color: #fff;
+}
+
 .cover .whoAmI img {
     box-sizing: border-box;
-    max-height: 4em;
+    max-height: 4.5em;
     margin-bottom: 0;
+    margin-right: 3vw;
     padding: 0.5em;
 }
 
 .cover .whoAmI img.nu-logo {
     padding: 1em 0.5em;
+}
+
+/* Reference links */
+
+a.reference {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    text-decoration: underline;
+    position: fixed;
+    bottom: 0;
+    left: 8em;
+}
+
+a.reference::before {
+    content: url("../images/reference.png");
+    padding-right: 0.5em;
+    vertical-align: text-bottom;
 }

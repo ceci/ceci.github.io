@@ -25,7 +25,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --code-font: monospace;
   --link-color: rgb(247, 148, 185);
   --link-color-hover:  rgba(247, 148, 185, 0.7);
-  --selection-background-color: #6F6374;
+  --selection-background-color: rgba(111, 99, 116, 0.6);
   --selection-color: #fff; }
 
 .reveal-viewport {
