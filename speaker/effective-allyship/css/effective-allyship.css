@@ -1,0 +1,44 @@
+.cover {
+    line-height: 0.8;
+    text-align: left;
+}
+
+.cover h1, .cover h2 {
+    line-height: 0.7;
+}
+
+.cover .title {
+    text-align: left;
+}
+
+.cover .whoAmI {
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.cover .whoAmI > * {
+    margin-right: 3vw;
+}
+
+.cover .whoAmI .contact {
+    display: inline-block;
+    line-height: 1.15;
+}
+
+.cover .whoAmI .contact > * {
+    display: block;
+}
+
+.cover .whoAmI .contact h4 {
+    margin-bottom: 0.5em;
+}
+
+.cover .whoAmI .contact a {
+    font-size: 84%;
+}
+
+.cover .whoAmI img {
+    max-height: 4em;
+    margin-bottom: 0;
+}
