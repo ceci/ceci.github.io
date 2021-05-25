@@ -26,6 +26,10 @@
 	text-align: right;
 }
 
+.reveal .semiTransparent {
+    opacity: 0.6 !important;
+}
+
 .reveal h1.onTop {
     position: fixed;
     top: 50%;
@@ -36,8 +40,11 @@
     padding: 0.2em 1em;
 }
 
-.reveal .littleSmaller {
-	font-size: 0.8em;
+.reveal .author {
+	font-size: 1em;
+    margin-top: 0.5em;
+    color: rgba(248, 248, 255, 0.5);
+    text-align: right;
 }
 
 .reveal h1.littleBigger {
@@ -64,6 +71,13 @@
 img.sideBySide {
     max-width: 45%;
     vertical-align: top;
+}
+
+h1.sideBySide, h3.sideBySide {
+    display: inline-block;
+    max-width: 45%;
+    margin-right: 0.5em;
+    vertical-align: middle;
 }
 
 /* Cover */
