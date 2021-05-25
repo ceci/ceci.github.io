@@ -30,11 +30,15 @@
 .reveal h4 {
 	text-align: left;
 	display: block;
-	margin-bottom: 0.5em;
-	font-size: 3em;
+	margin: 0.3em auto;
+	font-size: 2.5em;
 	font-family: 'Londrina Sketch', cursive;
 }
 
+img.sideBySide {
+    max-width: 45%;
+    vertical-align: top;
+}
 
 /* Cover */
 
@@ -108,3 +112,5 @@ a.reference::before {
     padding-right: 0.5em;
     vertical-align: text-bottom;
 }
+
+/**/
