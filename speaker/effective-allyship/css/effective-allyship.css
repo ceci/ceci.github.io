@@ -106,6 +106,7 @@ ul.sideBySide {
 .cover {
     line-height: 0.8;
     text-align: left;
+    margin-left: 2em;
 }
 
 .cover h1, .cover h2 {
@@ -124,7 +125,7 @@ ul.sideBySide {
 .cover .whoAmI .contact {
     display: inline-block;
     line-height: 1.15;
-    margin-right: 6rem;
+    margin-right: 5.5rem;
     vertical-align: super;
 }
 
@@ -149,7 +150,7 @@ ul.sideBySide {
     box-sizing: border-box;
     max-height: 4.5em;
     margin-bottom: 0;
-    margin-right: 3vw;
+    margin-right: 0em;
     padding: 0.5em;
 }
 
