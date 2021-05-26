@@ -57,6 +57,11 @@
     line-height: 0.7;
 }
 
+.reveal h1.littleSmaller {
+	font-size: 7.8rem;
+    line-height: 0.7;
+}
+
 .reveal h3.littleSmaller {
     font-size: 1.1em;
 }
