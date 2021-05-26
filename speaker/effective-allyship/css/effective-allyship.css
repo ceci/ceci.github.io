@@ -57,6 +57,13 @@
     line-height: 0.7;
 }
 
+.reveal h3.littleSmaller {
+    font-size: 1.1em;
+}
+
+.reveal .highlight {
+    color: rgb(255, 244, 89);
+}
 
 /* HTML hacks */
 
@@ -68,15 +75,24 @@
 	font-family: 'Londrina Sketch', cursive;
 }
 
+.reveal h4.littleSmaller {
+    font-size: 2em;
+}
+
 img.sideBySide {
     max-width: 45%;
     vertical-align: top;
 }
 
-h1.sideBySide, h3.sideBySide {
+h1.sideBySide, h2.sideBySide, h3.sideBySide {
     display: inline-block;
     max-width: 45%;
     margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+ul.sideBySide {
+    margin-top: 1em;
     vertical-align: middle;
 }
 
