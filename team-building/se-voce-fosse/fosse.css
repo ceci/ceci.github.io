@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    background-color: #9980FA;
+    color: white;
+    line-height: 1.4;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding: 2vh;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+p {
+    box-sizing: border-box;
+    margin: 1.3em 0;
+}
+
+h1 {
+    font-size: 60%;
+}
+
+.game {
+    font-family: 'Pacifico', cursive;
+    font-size: 220%;
+}
+
+span#category {
+    color: #FDA7DF;
+}
+
+.optional {
+    opacity: 0.5;
+}
+
+.instructions {
+    font-size: 14px;
+}
+
+.button {
+    background-color: #fda7df;
+    border-radius: 0.5em;
+    box-shadow: 2px 3px rgb(253 167 223/ 70%);
+    padding: 0.5em;
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+}

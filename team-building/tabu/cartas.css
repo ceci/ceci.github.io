@@ -1,0 +1,158 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+li {
+	width: 100%;
+	list-style: none;
+}
+
+li:first-child {
+	font-weight: 400;
+	margin-bottom: 1em;
+}
+
+
+@media print {
+	* {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	@page {
+		size: A4;
+		margin: 0;
+	}
+
+	html, body {
+		height: 297mm;
+		width: 210mm;
+		font-size: 2vw;
+		color: #000;
+		padding-left: 18mm;
+	}
+
+	ul {
+		border: 1px solid #999;
+		box-sizing: border-box;
+		display: inline-block;
+		margin: 3mm 1mm;
+		padding-top: 1em;
+		height: 60mm;
+		width: 48mm;
+		text-align: center;
+	}
+
+	ul:nth-child(20n+2) {
+		margin-top: 2em;
+	}
+
+	.instructions, .contribute {
+		display: none;
+	}
+}
+
+@media screen {
+	body {
+		margin: 1em;
+		background-color: #fab1a0;
+	}
+
+	.instructions {
+		display: inline-block;
+		max-width: 40vw;
+		margin-right: 2em;
+	}
+
+	.instructions h1 {
+		margin-bottom: 1.5em;
+		margin-left: 0.3em;
+	}
+
+	.instructions p {
+		background-color: rgba(255, 255, 255, 0.4);
+		border-radius: 1em;
+		padding: 1em;
+	}
+
+	.instructions p em {
+		display: block;
+		margin-top: 1em;
+		text-align: right;
+	}
+
+	.contribute {
+		background-color: rgba(0, 0, 0, 0.4);
+		font-weight: 400;
+		text-decoration: none;
+		color: #fab1a0;
+		position: fixed;
+		top: 2.5em;
+		right: -3.5em;
+		transform: rotate(45deg);
+		padding: 0.5em 3em;
+	}
+
+	ul {
+		background-color: #fff;
+		box-sizing: border-box;
+		border: 1px solid #bbb;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+		display: inline-block;
+		margin: 1em;
+		padding: 2em 1em;
+		text-align: center;
+		transform: translateY(-1em);
+		min-width: 200px;
+		width: 15vw;
+	}
+
+	ul {
+		display: none;
+	}
+
+	ul.show {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 1000px) {
+	.instructions {
+		max-width: 55vw;
+		margin-right: 1em;
+	}
+}
+
+@media (max-width: 630px) {
+	body {
+		margin-bottom: 0;
+	}
+
+	.instructions {
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.instructions h1 {
+		margin-bottom: 1em;
+	}
+
+	.contribute {
+		display: none;
+	}
+
+	ul {
+		font-size: 6vw;
+		line-height: 1.5;
+		margin: 1.5em auto 0;
+		min-width: 270px;
+		width: 15vw;
+	}
+
+	ul.show {
+		display: block;
+	}
+}

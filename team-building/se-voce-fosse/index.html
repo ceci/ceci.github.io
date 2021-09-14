@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Se você fosse...</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fosse.css">
+</head>
+<body>
+
+	<h1>Se você fosse...</h1>
+
+	<div class="game">
+		<p>
+			Se você fosse... <span id="category">________________</span>, o que você seria?
+		</p>
+		<p class="optional">E por quê?</p>
+	</div>
+
+	<div class="instructions">
+		<p>Esse é um jogo para conhecer novos grupos de forma divertida e despretenciosa.</p>
+
+		<p>Ele fica mais legal se você inventar as próprias categorias, mas, se precisar de inspiração, <a href="#" onclick="pickForMe()">clica aqui</a> pra sortearmos uma pra você!</p>
+	</div>
+
+	<a href="#" class="button" onclick="pickForMe()">Sorteie!</a>
+
+	<script>
+		const examples = ["um animal",
+						"um eletrodoméstico", 
+						"uma cidade", 
+						"um jogo", 
+						"um drink", 
+						"uma sobremesa",
+						"um personagem", 
+						"um item de escritório", 
+						"um meio de transporte", 
+						"um estilo musical", 
+						"um esporte",
+						"um prato de restaurante",
+						"um sabor de pizza", 
+						"um fenômeno natural",
+						"um filme",
+						"um app", 
+						"uma roupa",
+						"um tempero",
+						"uma fábula"];
+
+		function pickForMe() {
+			var selected = Math.round(Math.random()*examples.length);
+			category.innerText = examples[selected];
+		}
+	</script>
+
+</body>
+</html>

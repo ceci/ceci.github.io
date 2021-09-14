@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>M&Ms Ice Breaker</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="mms.css">
+</head>
+<body>
+    <div class="instructions">
+        <h1>M&Ms Ice Breaker</h1>
+        <h2>Remote version</h2>
+
+        <p>
+            <strong>Stories create bond and empathy!</strong>
+            
+            This is a remote version of the original "M&Ms" icebreaker. Each color of M&M has a theme. Your task is to share something about yourself.
+    
+            <em>Refresh to get a new one! <a href="#" onclick="refreshPage()">↻</a></em>
+        </p>
+    </div>
+
+    <ul class="mms">
+        <li class="red">Hobby you have</li>
+        <li class="green">Food you love</li>
+        <li class="yellow">Movie you like</li>
+        <li class="orange">Places you traveled to</li>
+        <li class="purple">Memorable or embarassing moment</li>
+        <li class="blue">Share anything</li>
+    </ul>
+
+    <a href="https://github.com/ceci/ceci.github.io/tree/master/m&ms" class="contribute" target="_blank">Contribute on Github</a>
+
+    <script type="text/javascript">
+        const colors = ["red", "green", "yellow", "orange", "purple", "blue"];
+
+        let position = Math.round(Math.random() * 100) % colors.length;
+        let selected = document.getElementsByClassName(colors[position])[0];
+        selected.className += " show";
+
+        function refreshPage() {
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>
