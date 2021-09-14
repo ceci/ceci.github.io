@@ -24,6 +24,10 @@ h1 {
     font-size: 60%;
 }
 
+hr {
+    margin-bottom: 3em;
+}
+
 .game {
     font-family: 'Pacifico', cursive;
     font-size: 220%;
@@ -31,9 +35,11 @@ h1 {
 
 span#category {
     color: #FDA7DF;
+    text-decoration: underline;
 }
 
 .optional {
+    margin-top: -0.5em;
     opacity: 0.5;
 }
 
