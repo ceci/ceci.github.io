@@ -15,7 +15,8 @@
 	<p>
 		<strong>O jogo é simples:</strong> o objetivo é descrever a palavra no alto do cartão para os outros jogadores -- mas sem usar nenhuma das outras palavras do cartão sorteado!
 
-		<em>Já usou sua palavra, recarregue a página para receber outra! ↻</em>
+		<em>Já usou sua palavra, clique neste botão para receber outra!</em>
+		<button>Nova palavra</button>
 	</p>
 </div>
 
@@ -7990,9 +7991,20 @@
 
 <a href="https://github.com/ceci/ceci.github.io/tree/master/tabu" class="contribute" target="_blank">Contribua no Github</a>
 <script>
-	let cards = document.getElementsByTagName("ul");
-	var selected = Math.round(Math.random()*cards.length);
-	cards[selected].className = "show";
+	(function() {
+		function selectCard(cards) {
+			var selected = Math.round(Math.random()*cards.length);
+			cards.forEach(card => card.classList.remove("show"));
+			cards[selected].classList.add("show");
+		}
+
+		const cards = document.querySelectorAll("ul");
+		selectCard(cards);
+
+		document.querySelector("button").addEventListener("click", function() {
+			selectCard(cards);
+		});
+	})();
 </script>
 
 </body>

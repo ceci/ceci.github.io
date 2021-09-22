@@ -81,7 +81,17 @@ li:first-child {
 	.instructions p em {
 		display: block;
 		margin-top: 1em;
-		text-align: right;
+	}
+
+	.instructions p button {
+		background-color: #ff6946;
+		border: none;
+		border-radius: 1em;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+		display: block;
+		margin-top: 1em;
+		padding: 0.5em 1em;
+		cursor: pointer;
 	}
 
 	.contribute {
