@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49591534-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-49591534-1');
+	</script>
+
+	<meta charset="utf-8">
+	<title>Me tornei desnecessária. E agora? - Ceci Fernandes</title>
+
+	<meta name="description" content="Me tornei desnecessária. E agora?">
+	<meta name="author" content="Ceci Fernandes">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/viva-theme.css" id="theme">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+	<!-- font imports -->
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+	
+	<!-- my css -->
+	<link rel="stylesheet" href="css/talk.css">
+</head>
+
+<body>
+<!--a id="languageSwitch" href="en/index.html">In English</a -->
+
+<div class="reveal linear center">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+	<section>
+		<h4>Pergunta rápida!</h4>
+		<h1 class="cursive">Enquanto vc tá na AB...</h1>
+		<h2>seu time vai rodar a retro?</h2>
+	</section>
+
+	<section class="cover" data-background="images/cover.jpg">
+		<h1 class="attention">Me tornei desnecessária!</h1>
+		<h2 class="cursive">E agora?</h2>
+		<div class="whoAmI">
+			<h4>Ceci Fernandes</h4>
+			<a href="http://cecifernandes.com">cecifernandes.com</a>
+			<a href="http://twitter.com/cecifernandes">@cecifernandes</a>
+		</div>
+		<div class="company">
+			<img src="images/nu-logo.png"/>
+		</div>
+	</section>
+
+	<section>
+		<section>
+			<h1></h1>
+		</section>
+		<section>
+			<h1></h1>
+		</section>
+	</section>
+
+	<!-- Closing slide -->
+	<section class="cover" data-background="images/cover.jpg">
+		<h1 class="attention">Me tornei desnecessária!</h1>
+		<h2 class="cursive">E agora?</h2>
+		<div class="whoAmI">
+			<h4>Ceci Fernandes</h4>
+			<a href="http://cecifernandes.com">cecifernandes.com</a>
+			<a href="http://twitter.com/cecifernandes">@cecifernandes</a>
+		</div>
+		<div class="company">
+			<img src="images/nu-logo.png"/>
+		</div>
+	</section>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+		dependencies: [
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+
+</script>
+
+</body>
+</html>
