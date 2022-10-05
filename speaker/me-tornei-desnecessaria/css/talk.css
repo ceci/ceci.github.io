@@ -24,11 +24,14 @@
 	margin-left: 5em;
 }
 
+.reveal .whoAmI h4 {
+	text-align: right;
+}
+
 .reveal .cover h4 {
-	font-family: inherit;
 	font-size: 1.5em;
 	margin-top: 0.3em;
-	text-align: right;
+	font-family: inherit;
 }
 
 .reveal .cover .whoAmI {
