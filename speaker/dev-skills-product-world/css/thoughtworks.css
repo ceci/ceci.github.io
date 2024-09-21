@@ -6,16 +6,6 @@
 	color: #f78f31; // orange
 	color: #fee0c9; // beige
 */
-#languageSwitch {
-	color: #fff;
-	cursor: pointer;
-	font-variant: small-caps;
-	position: absolute;
-		right: 1.5em;
-		top: 1em;
-	text-decoration: none;
-	z-index: 1;
-}
 
 .reveal .cover h1{
 	font-family: 'Londrina Sketch', cursive;
@@ -38,24 +28,17 @@
 	vertical-align: middle;
 	width: 25%;
 }
-.reveal .cover .logos {
-	display: inline-block;
-	height: 4em;
-	width: 50%;
-	padding: 30px 0 20px;
-	margin-left: 30px;
+.reveal .cover .speaker {
+	display: flex;
+	height: 8em;
+	margin: 30px 0 20px;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.reveal .cover .logos > a {
-	display: inline-block;
-}
-
-.reveal .cover .logos .aab {
-	max-width: 6em;
-}
-
-.reveal .cover .logos .tw {
-	max-width: 10em;
+.reveal .cover .logo {
+	filter: brightness(0) invert(1);
+	opacity: 70%;
 }
 
 .reveal .whoAmI * {

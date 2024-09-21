@@ -39,8 +39,6 @@
 </head>
 
 <body>
-<!--a id="languageSwitch" href="en/index.html">In English</a-->
-
 <div class="reveal linear center">
 
 <!-- Any section element inside of this container is displayed as a slide -->
@@ -48,36 +46,23 @@
 	<section class="cover">
 		<h1>Desenvolvimento ágil</h1>
 		<h2>num mundo de produtos</h2>
-		<div class="whoAmI">
-			<h3>Ceci Fernandes</h3>
-			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
-		</div>
-		<div class="logos">
-			<a href="https://www.agilealliance.org/agilealliancebrazil/" class="aab">
-				<img src="images/aab-logo.png" alt="Agile Alliance Brazil Logo">
-			</a>
-			<a href="http://www.thoughtworks.com" class="tw">
-				<img src="images/thoughtworks_white_logo.png" alt="ThoughtWorks Logo">
-			</a>
+		<div class="speaker">
+			<div class="whoAmI">
+				<h3>Ceci Fernandes</h3>
+				<p><a href="https://www.linkedin.com/in/cecifernandes">in/cecifernandes</a></p>
+			</div>
+			<img src="images/glpr-work-smarter.png" alt="Global Productivity at Nu" class="logo glpr">
 		</div>
 	</section>
 	<section>
-		<section>
-			<h4>Tema do dia: produtos!</h4>
-			<div class="fragment">
-				<h1 class="attention">Produtos</h1>
-				<h1>==</h1>
-				<h1 class="attention">Incerteza</h1>
-			</div>
-		</section>
 		<section>
 			<h1 class="cursive">A gente fala <strong>muito</strong> de</h1>
 			<h2>processos, pessoas, cultura</h2>
 		</section>
 		<section>
 			<h1>Mas o que</h1>
-			<h1 class="attention">desenvolvedores</h1>
-			<h2 class="bigger">precisam saber?</h2>
+			<h1 class="attention">a engenharia</h1>
+			<h2 class="bigger">precisa saber?</h2>
 		</section>
 		<section>
 				<h1 class="cursive"><strong>Responder a mudanças</strong><br>mais que seguir um plano</h1>
@@ -101,7 +86,6 @@
 			<h1>Mas mais básico</h1>
 			<h1 class="fragment cursive">muito menos novidade</h1>
 			<h1 class="fragment">bem <strong>+</strong> importante</h1>
-			<h3 class="fragment otherSide">(*) pra sistemas com muitas interações</h3>
 		</section>
 		<section>
 			<h1 class="attention">3. Clean Code</h1>
@@ -114,7 +98,7 @@
 		<section>
 			<h1 class="attention">5. Testes automatizados</h1>
 			<h3 class="fragment right">Entendimento da <a href="https://martinfowler.com/bliki/TestPyramid.html">pirâmide de testes</a></h3>
-			<h3 class="fragment right">e da <a href="https://martinfowler.com/articles/practical-test-pyramid.html">recente atualização</a></h3>
+			<h3 class="fragment right">e da <a href="https://martinfowler.com/articles/practical-test-pyramid.html">atualização de 2018</a></h3>
 		</section>
 		<section>
 				<h1 class="attention">6. Entrega contínua</h1>
@@ -125,7 +109,12 @@
 		<section>
 			<h1 class="attention">7. Entendimento de arquiteturas</h1>
 			<h3 class="fragment right">Micro-serviços</h3>
-			<h3 class="fragment right">Camadas</h3>
+			<h3 class="fragment right">
+				<a href="https://alistair.cockburn.us/hexagonal-architecture/" target="_blank">Hexagonal (ports & adapters)</a>
+			</h3>
+			<h3 class="fragment right">
+				<a href="https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html" target="_blank">Camadas</a>
+			</h3>
 		</section>
 	</section>
 
@@ -154,10 +143,11 @@
 		</section>
 		<section>
 			<h4>3 amigos onde?</h4>
-			<h1 class="fragment">Inceptions</h1>
-			<h1 class="fragment">Critérios de aceite</h1>
+			<h2 class="fragment">Inceptions</h2>
+			<h2 class="fragment">Critérios de aceite</h2>
+			<h2 class="fragment">Whiteboarding</h2>
 		</section>
-		<section>
+		<section> 
 			<h4>HDD</h4>
 			<h1 class="fragment left" data-fragment-index="2"><strong>H</strong>ypothesis</h1>
 			<h1 class="fragment left" data-fragment-index="1"><strong>D</strong>riven</h1>
@@ -175,8 +165,16 @@
 			<h2 class="fragment cursive otherSide" style="margin-right: 4em;">automatizadas<br>de preferência...</h2>
 		</section>
 		<section>
-			<h1>Analytics</h1>
-			<h1 class="fragment">Dashboard próprio</h1>
+			<h1>Saúde do sistema</h1>
+			<h2 class="fragment right">(Analytics, Grafana, Cortex, ...)</h2>
+			<h1 class="fragment">
+				<a href="https://dora.dev/" target="_blank">DORA metrics</a>
+			</h1>
+			<h3 class="fragment right">Frequência de deploy<br>
+				lead time pra mudanças<br>
+				tempo de recuperação<br>
+				taxa de inserção de falhas
+			</h3>
 		</section>
 		<section>
 			<h4>E, com métricas...</h4>
@@ -190,25 +188,22 @@
 	<section>
 		<section>
 			<h4>Em resumo</h4>
-			<h1 class="fragment cursive bigger">"Qualquer prática que ajuda a<br>reduzir o custo de mudança de<br>direção ou experimentação"</h1>
-			<h3 class="fragment cursive otherSide">Hugo Corbucci</h3>
+			<div class="fragment">
+				<h1 class="cursive bigger">"Qualquer prática que ajuda a<br>reduzir o custo de mudança de<br>direção ou experimentação"</h1>
+				<h3 class="cursive otherSide">Hugo Corbucci</h3>
+			</div>
 		</section>
 	</section>
 
 	<section class="cover">
 		<h1>Desenvolvimento ágil</h1>
 		<h2>num mundo de produtos</h2>
-		<div class="whoAmI">
-			<h3>Ceci Fernandes</h3>
-			<p><a href="http://twitter.com/cecifernandes">@cecifernandes</a></p>
-		</div>
-		<div class="logos">
-			<a href="https://www.agilealliance.org/agilealliancebrazil/" class="aab">
-				<img src="images/aab-logo.png" alt="Agile Alliance Brazil Logo">
-			</a>
-			<a href="http://www.thoughtworks.com" class="tw">
-				<img src="images/thoughtworks_white_logo.png" alt="ThoughtWorks Logo">
-			</a>
+		<div class="speaker">
+			<div class="whoAmI">
+				<h3>Ceci Fernandes</h3>
+				<p><a href="https://www.linkedin.com/in/cecifernandes">in/cecifernandes</a></p>
+			</div>
+			<img src="images/glpr-work-smarter.png" alt="Global Productivity at Nu" class="logo glpr">
 		</div>
 	</section>
 </div>
